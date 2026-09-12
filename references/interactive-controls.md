@@ -1,15 +1,15 @@
 # Proteus Skills：按钮、开关与逻辑输入
 
-使用 `proteus-native 0.2.0` 的公共 API。支持 `BUTTON`、`SW-SPST`、`SW-SPST-MOM`、`SWITCH`、`LOGICSTATE`、`LOGICTOGGLE` 六类二态输入。需要真正的电源、连接和仿真模型；MCU 响应还需要匹配的固件。
+使用 `proteus-automatic-api 0.2.0` 的公共 API。支持 `BUTTON`、`SW-SPST`、`SW-SPST-MOM`、`SWITCH`、`LOGICSTATE`、`LOGICTOGGLE` 六类二态输入。需要真正的电源、连接和仿真模型；MCU 响应还需要匹配的固件。
 
 ## 先绑定，再保存重开
 
-对已连接好的 `BUTTON` 元件 SW1：
+对用户提供、已连接好的 `BUTTON` 元件 SW1，先将 `control_project_path` 设为工程路径，将 `executable_path` 设为已确认的 PDS.EXE 路径。普通电路和 MCU 电路均可使用此流程；工程、固件和器件模型不随技能附带：
 
 ```python
-from proteus_api import Circuit
+from proteus_automatic_api import Circuit
 
-c = Circuit.open("button_circuit.pdsprj")
+c = Circuit.open(control_project_path)
 print(c.components(), c.pins("SW1"))
 c.bind_controls("SW1")
 project = c.save("button_bound.pdsprj")
@@ -27,9 +27,9 @@ project = c.save("button_bound.pdsprj")
 在上一段已准备的 `project` 上运行。示例验证控件状态；它本身不证明下游电气或 MCU 响应。
 
 ```python
-from proteus_api import Session, Simulation
+from proteus_automatic_api import Session, Simulation
 
-s = Session(project, executable=r"D:\Proteus\BIN\PDS.EXE")
+s = Session(project, executable=executable_path)
 sim = Simulation(s)
 try:
     controls = {item["ref"]: item for item in sim.controls()}
@@ -76,7 +76,7 @@ finally:
 
 STM32 CM3 可用 `sim.gpio_events(ref=..., port=..., pin=...)` 或读取一次 `sim.log()` 后用 `gpio_events(log, ...)` 解析。检查目标响应确实出现在输入变化后的时间区间，并且电平/顺序符合固件；无日志事件不能视为低电平。日志读取会替换系统剪贴板，执行前简短告知。
 
-本库 `api/examples/button_mcu/` 提供 PA0 输入驱动 PA5 的固件源码、HEX 与构建文件；`api/check_button_mcu.py` 使用官方 STM32 样例的独立副本，配置 BUTTON → PA0 → 固件 → PA5。它在三段仿真中核对 PA5 的松开/按下/松开响应，不需要重写固件或私有读内存脚本。这个固件的预期是 0→1→0，其他工程的预期按其实际固件确定。
+例如，用户提供的固件若实现“读取 PA0 并驱动 PA5”，且按钮松开使 PA0 为低、按下使 PA0 为高，则在初始、按下后、松开后三段仿真中分别核对 PA5 的 0→1→0 及响应时间区间。其他工程的预期按实际固件和接线确定。不能假定本技能或 wheel 包含可用 HEX、已接线的演示工程或官方样例；需要演示资源时只使用发布者另外提供或用户指定的文件。
 
 ## 兼容性和失败定位
 
@@ -88,24 +88,8 @@ STM32 CM3 可用 `sim.gpio_events(ref=..., port=..., pin=...)` 或读取一次 `
 - 控件改变但 MCU 无响应：检查供电、引脚映射、上下拉、固件和时钟；继续仿真并核对日志，不能只重试 press。
 - 未知构建/模型：报告具体限制，不修改 DLL 指纹、私有状态或元件字节以跳过检查。
 
-## 可复用验证
+## 按当前工程验证
 
-在库根目录选择与任务相关的检查。离线绑定检查不启动 Proteus；仍需要默认器件目录和模板：
+在用户工作目录组合上面的公共 API 示例，并按需求增加下游断言。保存绑定后重新打开工程检查属性；新的 Session 中核对控件状态、重复设值的 `changed=False`、实际命令时间与仿真完成类型。用户要求电路响应时，必须在按下和松开后分别继续仿真并保存对应输出证据。
 
-```powershell
-py -3.12 -B api/check_control_bindings.py
-```
-
-六类控件的原生检查含键槽冲突、重复设值、运行状态恢复、下游探针和计时残余分支：
-
-```powershell
-py -3.12 -I api/check_interactions.py
-```
-
-实际 BUTTON → MCU GPIO 验收：
-
-```powershell
-py -3.12 -I api/check_button_mcu.py
-```
-
-后两项会创建副本并启动自有进程；MCU 检查还读取日志、替换剪贴板。`check_button_mcu.py` 支持 `--sample`、`--executable`、`--output`；输出目录必须不存在。读取本次 JSON 的通过标志、正常退出和原样例未修改结果，不能仅因出现 `result.json` 就认为通过（MCU 检查失败也写此文件）。`check_installed.py` 没有交互覆盖，不能单独替代以上交互验收。
+脚本与结果只依赖已安装的库及明确提供的工程/固件，无需克隆库仓库。若保存 JSON 报告，明确记录通过/失败、原件是否保持和自有进程的退出结果；文件存在本身不代表通过。六类控件的全量回归和库内部适配器检查属于库仓库的维护测试。

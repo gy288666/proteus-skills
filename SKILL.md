@@ -1,37 +1,36 @@
 ---
 name: proteus-skills
-description: 使用 proteus-native Python 库创建、编辑和验证真实 Proteus/ISIS 工程，加载 MCU 固件、操作按钮/开关并读取仿真结果。用于用户要求 Proteus Skills、操作 .pdsprj、Proteus 自动化或在 Proteus 中测试按钮驱动电路的任务；普通电路讲解和概念配图不需要此技能。
+description: 使用 proteus-automatic-api Python 库创建、编辑和验证真实 Proteus/ISIS 工程，加载 MCU 固件、操作按钮/开关并读取仿真结果。用于用户要求 Proteus Skills、操作 .pdsprj、Proteus 自动化或在 Proteus 中测试按钮驱动电路的任务；普通电路讲解和概念配图不需要此技能。
+license: MIT
 ---
 
 # Proteus Skills
 
-通过 `proteus_api` 交付可继续编辑的 `.pdsprj` 及可核对的原生结果。技能名称是 **Proteus Skills**，调用名是 `$proteus-skills`；依赖的 Python 包名仍为 `proteus-native`，导入名仍为 `proteus_api`。
+通过 `proteus_automatic_api` 交付可继续编辑的 `.pdsprj` 及可核对的原生结果。技能名称是 **Proteus Skills**，调用名是 `$proteus-skills`。独立代码仓库与 Python 分发包均名为 **`proteus-automatic-api`**，Python 导入名为 `proteus_automatic_api`。
+
+技能与库独立分发。本技能不包含库源码、wheel、Proteus 软件或器件/固件样例，也不要求克隆库仓库、将两者放在相邻目录或从技能目录运行任务。
 
 文件构建、修改和连线优先用库；网表、固件执行和交互由真实 Proteus 进程完成。无需 MCP、OCR 或屏幕坐标。用户明确选择 GUI 时遵循其选择；库未覆盖的操作按需使用 Proteus 界面。
 
 ## 环境与版本
 
-当前工作流对应 **proteus-native 0.2.0**。已验证环境为 Windows、Python 3.12、Proteus 8.16 SP3（8.16.36097）；Python 最低要求 3.10。先检查实际解释器中的库，避免源码目录掩盖旧安装：
+当前工作流针对 **proteus-automatic-api 0.2.0** 验证。已验证环境为 Windows、Python 3.12、Proteus 8.16 SP3（8.16.36097）；Python 最低要求 3.10。命令中的 `py -3.12` 是已验证解释器的示例，其他符合要求的解释器要一致用于安装和运行。先从用户工作目录检查实际安装：
 
 ```powershell
-py -3.12 -I -c "import proteus_api; print(proteus_api.__version__); print(proteus_api.__file__)"
+py -3.12 -I -c "import proteus_automatic_api; print(proteus_automatic_api.__version__); print(proteus_automatic_api.__file__)"
 ```
 
-缺失或仍为旧版时，从用户提供的本库目录安装。在含 `pyproject.toml` 和 `dist/` 的仓库根目录执行：
+匹配版本已安装时直接继续，不要求库源码。缺失或版本不符时读 [库的分发与版本](references/distribution.md)：从确定的发行来源获取库，不能假定技能仓库含 `dist/` 或可执行 `pip install .`，也不要安装同名的 `proteus-skills` Python 包。不同版本先核对对应文档/签名，不自动升级、降级或绕过能力校验。
 
-```powershell
-py -3.12 -m pip install --no-index --no-deps '.\dist\proteus_native-0.2.0-py3-none-any.whl'
-```
-
-源码安装可用 `py -3.12 -m pip install .`，需要 setuptools>=68。不要因技能改名而尝试安装 `proteus-skills` 包。实际库版本不同于本文时，先核对该版本本地文档和签名。
-
-| 资源 | 默认路径 | 配置入口 |
+| 资源 | 0.2.0 内置默认值（使用前验证） | 配置入口 |
 |---|---|---|
 | Proteus | `D:\Proteus\BIN\PDS.EXE` | `Session(project, executable=...)`，要求 PDS.EXE |
 | 器件目录 | `C:\ProgramData\program\LIBRARY` | `Library(directory=...)`，仅查询 |
 | 新建模板 | `C:\ProgramData\program\SAMPLES\Graph Based Simulation\Rescap.pdsprj` | `Circuit(template_project=...)` |
 
 按任务检查所需路径；库不会自动探测安装。`import_device(..., library=...)` 的 `library` 是库名选择器，导入仍使用默认目录。`Library(directory=...)` 不会改变导入器；可以从有对应定义的 donor 工程导入。空模板初始化也可能回退到默认 Rescap 样例。不要把这些局部路径参数描述为完整可移植配置。
+
+上述默认值来自库，不是技能仓库位置或对其他电脑的安装假设。示例中的 `template_path`、`executable_path`、`control_project_path`、`mcu_project_path`、`firmware_path`、`graph_project_path` 均由本次任务中已确认的绝对路径赋值；不需要创建额外配置文件。所有输出放到用户工作目录，技能安装目录仅提供说明。
 
 ## 按任务选择工作流
 
@@ -68,6 +67,6 @@ py -3.12 -m pip install --no-index --no-deps '.\dist\proteus_native-0.2.0-py3-no
 
 ## 验证与交付
 
-为本次任务保留简短可重跑脚本与必要断言；优先检查应连接/应分离的网络、目标值、输入时序和实际输出。参考中的现有检查按任务选择，不要求每次运行完整库测试。
+为本次任务保留简短可重跑脚本与必要断言；优先检查应连接/应分离的网络、目标值、输入时序和实际输出。使用本技能自带的公共 API 示例验证，不依赖库仓库的 `api/check_*.py` 或历史结果。完整库回归属于库仓库的维护工作，不是使用技能的前置条件。
 
 交付工程绝对路径及实际产生的 SDF、CSV、日志/JSON 和脚本。分别说明文件重开、原生网表、交互状态、下游响应、视觉检查的完成情况，只报告本次证据支持的结论。

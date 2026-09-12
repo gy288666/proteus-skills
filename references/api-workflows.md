@@ -1,20 +1,20 @@
 # Proteus Skills：工程、仿真和测量
 
-对应 `proteus-native 0.2.0`。只读取当前任务对应的小节；按钮与开关操作另见 [交互控制](interactive-controls.md)。示例里的默认安装路径应先验证，输出目录和工程名按用户任务设置。Python 运行时仅需标准库及已安装的库。
+对应 `proteus-automatic-api 0.2.0`。只读取当前任务对应的小节；按钮与开关操作另见 [交互控制](interactive-controls.md)。本文件包含操作示例，不需要库源码。使用前将主入口约定的路径变量设为本次任务已确认的绝对路径；示例的相对输出名位于用户工作目录，不在技能目录。
 
 ## 原理图与网表
 
 ### 新建、保存、重开
 
-下面是文件与连线示例，没有输入源，不能据此宣称已完成 RC 电气仿真。可保存为脚本执行；断言验证实际保存后的元件和网络。
+下面是文件与连线示例，没有输入源，不能据此宣称已完成 RC 电气仿真。`template_path` 必须指向含可用 `RESISTOR`、`CAPACITOR` 原型的模板，例如本机另行安装的官方 Rescap；不是任意 `.pdsprj` 都提供这两个原型。使用其他模板时，先通过受支持的器件库或 donor 工程导入所缺定义。可保存为脚本执行；断言验证实际保存后的元件和网络。
 
 ```python
 from pathlib import Path
-from proteus_api import Circuit
+from proteus_automatic_api import Circuit
 
 out = Path("proteus-output").resolve()
 out.mkdir(parents=True, exist_ok=True)
-template = Path(r"C:\ProgramData\program\SAMPLES\Graph Based Simulation\Rescap.pdsprj")
+template = Path(template_path).resolve(strict=True)
 c = Circuit(template_project=template)
 c.add("RESISTOR", "R1", "10k", 0, 0)
 c.add("CAPACITOR", "C1", "100n", 2540000, 0)
@@ -32,9 +32,9 @@ print(project)
 需要原生确认时，在同一脚本后继续。SDF 的 `nets` 是字典列表，每个网络有 `name`、`pins`、`terminals`、`properties`；每个 pin 有 `ref`、`kind`、`pin`。先看实际 SDF 端点再写断言：MCU 的 `pin` 可能是 `PA0-WKUP` 这样的逻辑名，不能直接拿 `c.pins(ref)` 的 `number` 当作 SDF 引脚字段。普通电阻/电容可按下面的编号对照。
 
 ```python
-from proteus_api import Session
+from proteus_automatic_api import Session
 
-s = Session(project, executable=r"D:\Proteus\BIN\PDS.EXE")
+s = Session(project, executable=executable_path)
 try:
     data = s.export_netlist(out / "rc.sdf")
     assert {ref: part["value"] for ref, part in data["parts"].items()} == {"R1": "10k", "C1": "100n"}
@@ -53,7 +53,7 @@ finally:
 ### 修改已有电路
 
 ```python
-from proteus_api import Circuit
+from proteus_automatic_api import Circuit
 
 c = Circuit.open("proteus-output/rc.pdsprj")
 print(c.components(), c.connections(), c.terminals())
@@ -74,7 +74,7 @@ assert {p["ref"]: p["value"] for p in Circuit.open(revised).components()} == {
 ### 器件、引脚和拓扑
 
 ```python
-from proteus_api import Library
+from proteus_automatic_api import Library
 
 catalogue = Library()  # 自定义目录仅对查询生效
 print(catalogue.search("ATMEGA328", limit=10))
@@ -116,15 +116,15 @@ print(c.power_rails())
 
 先在工程副本中确定真实 MCU 编号、型号、时钟及匹配的固件。`firmware_info(path)` 校验 ELF 头/架构号或 Intel HEX 校验和、EOF，不证明固件匹配目标 MCU，也不负责编译。
 
-下面假定 `stm32-work.pdsprj` 已准备好，U1 是匹配固件的 STM32，PA5 为待观察引脚。路径、编号和引脚不能照搬到其他 MCU。
+下面假定 `mcu_project_path` 指向已准备好的工程副本，U1 是匹配固件的 STM32，PA5 为待观察引脚。`firmware_path` 指向匹配的外置固件；路径、编号和引脚不能照搬到其他 MCU。
 
 ```python
 from pathlib import Path
-from proteus_api import Session, Simulation, firmware_info
+from proteus_automatic_api import Session, Simulation, firmware_info
 
-firmware = Path("blink.elf").resolve(strict=True)
+firmware = Path(firmware_path).resolve(strict=True)
 print(firmware_info(firmware))
-s = Session("stm32-work.pdsprj", executable=r"D:\Proteus\BIN\PDS.EXE")
+s = Session(mcu_project_path, executable=executable_path)
 sim = Simulation(s)
 try:
     sim.set_firmware("U1", firmware)
@@ -150,23 +150,24 @@ finally:
 
 如果工程使用内嵌固件，先用标准库 `zipfile.ZipFile(...).namelist()` 确认成员，再调用 `extract_firmware(project, destination, member="实际成员名")`；多个候选时按目标 MCU/配置选择，不猜测。
 
-带 `FIRMWARE.XML` 的 VSM Studio 工程可能重新生成 `PROGRAM`，其日志 dock 也可能没有库可读取的独立窗口。需要外置固件时，在明确用于外置固件的副本中移除对应嵌入构建项，再设置提取出的匹配固件并做 SDF 回读；不修改原项目、不执行内嵌构建脚本。具体样例转换可参考库源码 `api/check_simulation.py` / `api/check_installed.py`；无法确认成员作用时保留项目结构并报告限制。
+带 `FIRMWARE.XML` 的 VSM Studio 工程可能重新生成 `PROGRAM`，其日志 dock 也可能没有库可读取的独立窗口。需要外置固件时，仅在能够确认对应嵌入构建项作用的专用副本中移除这些项，再设置匹配固件并做 SDF 回读；不修改原项目、不执行内嵌构建脚本。无法确认成员作用时保留结构，使用 Proteus 界面转换或取得已配置外置固件的工程，不能为了套用示例而批量删除 ZIP 成员。
 
 ## 图表与模拟量
 
 测量必须复用有图表和探针的工程。不能先 `Circuit(template_project=graph_project)` 再测量，那会得到新空图。已有图表的工程也可能拒绝 `Circuit.open()`，此时保留原文件结构，用原生属性接口或专用发生器编辑接口。
 
-以下是默认安装的官方 Rescap 样例，图名、发生器名及 trace 名仅适用于这个样例：
+以下使用本机单独安装的官方 Rescap 样例，将 `graph_project_path` 设为它的实际路径。技能不提供该文件；没有它时可使用用户提供且已有图表/探针的工程，并按查询结果修改发生器、图表及 trace 名称。下面的这些名称仅适用于 Rescap：
 
 ```python
-from proteus_api import (
+from pathlib import Path
+from proteus_automatic_api import (
     Session, generators, set_generator_properties, graphs, export_graph, sample_graph,
 )
 
-source = r"C:\ProgramData\program\SAMPLES\Graph Based Simulation\Rescap.pdsprj"
+source = Path(graph_project_path).resolve(strict=True)
 print(generators(source))
 project = set_generator_properties(source, "analogue-work.pdsprj", "INPUT", AMP="2")
-s = Session(project, executable=r"D:\Proteus\BIN\PDS.EXE")
+s = Session(project, executable=executable_path)
 try:
     print(graphs(s))
     data = export_graph(s, "ANALOGUE ANALYSIS", "waveforms.csv", simulate=True)
@@ -188,13 +189,6 @@ CSV 保留轴和全部 trace，包括重名列；`sample_graph(data, name, x, oc
 
 优先用当前任务脚本里的少量断言，核对目标值、应连接/应分离的引脚或预期行为。文件级断言不能代替原生编译，原生编译不能代替电气行为或视觉检查。
 
-库源码中已有检查可复用，无需为常规任务运行整个套件：
+仅安装 wheel 就能执行本文件的公共 API 示例：新建/编辑任务保存后重开并断言值和网络；原生验收另导出 SDF；固件任务按目标行为核对日志；测量任务保存新仿真的原始 CSV。所需 Proteus 程序、模型和工程仍须由本机安装或用户提供。
 
-```powershell
-py -3.12 -B api/check_sdf.py
-py -3.12 -B api/check_measurements.py --parser-only
-py -3.12 -B api/check_simulation.py --offline
-py -3.12 -B api/check_pin_mapping.py
-```
-
-这些格式检查不启动 Proteus。确需验收安装、编辑、固件和测量整条链路时，在库根目录运行 `py -3.12 -I api/check_installed.py`；它需要默认目录的器件库、Rescap 与官方 STM32 Blink 样例，会创建副本、启动自有进程并覆盖剪贴板，结果留在 `api/artifacts/installed-*/`。只有本次成功退出且生成通过的 `result.json` 才能作为本次验收证据。
+完整库回归在独立库仓库维护，本技能不携带或要求源码测试脚本。不要在技能目录运行相对路径 `api/check_*.py`，不要把另一个仓库的历史通过结果当作当前任务验证。
