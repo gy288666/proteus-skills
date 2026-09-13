@@ -64,37 +64,7 @@ Provide the agent with the project or template, the Proteus executable location,
 
 Use actual paths on your machine. Outputs belong in your working directory. The library's built-in paths do not automatically adapt to every installation; see [SKILL.md](SKILL.md#环境与版本) for path parameters and known limitations.
 
-## Prompts for the three scenarios
 
-Use the common requirements below, followed by one scenario prompt. The original firmware C sources, HEX files and build scripts are in [examples/stm32](examples/stm32); place the outputs compiled for your run under the task’s `firmware/` directory. The official STM32 template and device models come from your local Proteus installation.
-
-An independent agent rebuilt and verified the three scenarios using only the public prompts, confirming output sequences `0→1→0→1→0`, `0→1→1→1→0→0`, and `00→10→11→01→00`; see the [independent verification record](examples/stm32/verification.json).
-
-The verified prompts below cover the full build and original recording; published GIFs follow the editing and display rules described at the top of this README.
-
-### Common requirements
-
-```text
-Use $proteus-skills and only public proteus_automatic_api APIs to create an empty project from a confirmed STM32 template that has been saved natively. Query and select the MCU, BUTTON, resistor and LED with Library.search/get, reuse existing definitions, and place and wire each item individually. Configure a 3.3 V VCC/VDD rail: bind VCC, VDD and VDDA to it, and VSS and VSSA to GND. Connect NRST, VBAT and VREF+ to the supply, and BOOT0 and VSS to ground. Bind the buttons before saving and reopening, then configure the firmware using the HEX compiled for this run. Start each resistor at 470 ohms and change it to 330 ohms through Session.set_properties. Keep components, wires and text clearly spaced inside the drawing frame; use label_offsets where needed. Passively record the continuous workflow from the blank sheet through actual selection, individual placement, wiring, configuration and verification. A new Session may display each saved file edit; show real API calls and query results in a synchronized log. Do not use Computer Use, private helpers or completed screenshots to fabricate the process. Save, close, reopen, check the project and export a native SDF, then verify the behavior below using actual GPIO logs. Deliver the project, HEX, script, SDF, validation records and GIF without changing the template.
-```
-
-### Hold to light
-
-```text
-Build an STM32F103R6 hold-to-light example using firmware/hold.hex compiled for this run. Connect normally open BUTTON SW1 between 3.3 V and U1.PA0-WKUP; the firmware enables PA0's internal pull-down. Connect U1.PA5 through R1 to D1's anode and ground D1's cathode. Follow the common requirements to select, place, wire, bind and configure everything from an empty sheet. Run successive stages: initially released, press SW1, release SW1, press again, release again. Continue simulation after each action and record actual simulation times. Verify PA5 levels 0→1→0→1→0 from this run's GPIO logs, with each response in the interval after its input change. Button state or a netlist alone does not prove the LED behavior. Record both press-on/release-off cycles and retain structural and response evidence.
-```
-
-### Click to toggle
-
-```text
-Build an STM32F103R6 single-button toggle example using firmware/toggle.hex compiled for this run. Connect normally open SW1 between 3.3 V and U1.PA0-WKUP, with PA0's internal pull-down enabled. Connect U1.PA5 through R1 to D1's anode and ground the cathode. Follow the common requirements to build the project from an empty sheet, including changing R1 from 470 to 330 ohms through the native property API. The firmware toggles PA5 only on a button rising edge. Verify six successive stages: initially released, first press, continue holding, first release, second press, second release. Continue simulation in every stage and require PA5 levels 0, 1, 1, 1, 0, 0. In particular, holding or releasing must not cause another toggle. Use actual GPIO events and simulation times from this run; absence of a new event alone does not imply a low level. Record the entire build and all six stages.
-```
-
-### Two buttons, independent LEDs
-
-```text
-Build an STM32F103R6 two-button independent LED example using firmware/dual.hex compiled for this run. Connect normally open SW1 and SW2 from 3.3 V to U1.PA0-WKUP and U1.PA1 respectively; the firmware enables both internal pull-downs. Connect U1.PA5 through R1 to D1's anode and U1.PA6 through R2 to D2's anode, grounding both cathodes. Leave clear space between the two channels. Follow the common requirements to place and wire each item, bind both buttons and change both resistors from 470 to 330 ohms through the native API. Run five stages: both released, press SW1, keep SW1 pressed and press SW2, release SW1, release SW2. Continue simulation after every action. In PA5, PA6 order, require output vectors 00→10→11→01→00 and check that operating one channel does not incorrectly change the other. Record the full build, configuration and all five states, verifying independent control with this run's GPIO logs and actual event times.
-```
 
 ## Capabilities
 
@@ -115,7 +85,6 @@ All Proteus operations use the public `proteus_automatic_api` API, which drives 
 - Six types of binary controls are supported. They share 10 actuator key slots, using two slots per control, for a maximum of five controls. Existing bindings reduce the available capacity.
 - Analog measurements require existing graphs and probes. There is no general ERC, arbitrary graph or probe creation, general live pin-voltage reading, or schematic image export API.
 
-Control state, netlist connectivity, and actual electrical response are verified separately. Agents should report results supported by the projects, logs, and data produced for the current task.
 
 ## Repository contents
 
