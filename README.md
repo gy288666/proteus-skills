@@ -26,6 +26,7 @@ Proteus Skills 提供原理图编辑、单片机仿真、按钮与开关控制�
 <p align="center">
 <img src = "images\WechatQR.jpg" width="31%">
 </p>
+
 ## 环境要求
 
 - **Windows**，已安装 Proteus 及电路所需的器件模型。
