@@ -2,6 +2,8 @@
 
 对应 `proteus-automatic-api 0.2.0`。只读取当前任务对应的小节；按钮与开关操作另见 [交互控制](interactive-controls.md)。本文件包含操作示例，不需要库源码。使用前将主入口约定的路径变量设为本次任务已确认的绝对路径；示例的相对输出名位于用户工作目录，不在技能目录。
 
+首次使用先按 [主入口的环境准备流程](../SKILL.md#环境与版本) 检查并在需要时从官方 GitHub 安装库。文字布局和新建固件隔离语义需要核对所装提交的实际能力，不能只凭 `0.2.0` 推定支持。
+
 ## 原理图与网表
 
 ### 新建、保存、重开
@@ -68,6 +70,19 @@ assert {p["ref"]: p["value"] for p in Circuit.open(revised).components()} == {
 ```
 
 `Circuit.move(ref, x, y)` 是绝对坐标并重路由；`rotate(ref, degrees)` 是增量旋转，支持 90° 的整数倍；`mirror(ref, "x"/"y")` 切换镜像。`add(..., rotation=90)` 指定新实例朝向。打开旧工程后以 `pins()` 的实际世界坐标为准，`rotation_raw` 不是度数。
+
+元件文字应与图形、相邻导线分开。用 `update()` 的 `label_offsets` 按图纸方向设置相对元件原点的坐标，旋转后应用，元件移动时文字随行：
+
+```python
+c.update("R1", label_offsets={
+    "reference": (762000, 508000),
+    "value": (762000, 127000),
+    "device": (762000, -254000),
+    "properties": (762000, -635000),
+})
+```
+
+四个键均可省略；每次字典替换该实例之前的显式偏移，未指定项沿用模板布局。坐标使用 int32 整数，错误输入或溢出会原子拒绝。该操作保留实际参数、显示标志、引脚和连接；不要把移动文字描述为隐藏文字。坐标仅作 API 示例，按本次元件大小与文字长度调整，并被动检查原生画面后再交付。
 
 仅查看某些无法结构重写的工程时，可用 `Project(path).components()`。`Project.set_value()` 只接受等字节长度值；`Project.move(ref, dx, dy)` 是相对位移且**不会移动导线**，不能代替带连线布局编辑。`Project.save(new_path)` 只写新文件。变长原生属性可用 `s.set_properties("R1", VALUE="47k")`，它通过 ADI 修改并从 SDF 回读，随后 `s.save()`。
 
@@ -150,7 +165,7 @@ finally:
 
 如果工程使用内嵌固件，先用标准库 `zipfile.ZipFile(...).namelist()` 确认成员，再调用 `extract_firmware(project, destination, member="实际成员名")`；多个候选时按目标 MCU/配置选择，不猜测。
 
-带 `FIRMWARE.XML` 的 VSM Studio 工程可能重新生成 `PROGRAM`，其日志 dock 也可能没有库可读取的独立窗口。需要外置固件时，仅在能够确认对应嵌入构建项作用的专用副本中移除这些项，再设置匹配固件并做 SDF 回读；不修改原项目、不执行内嵌构建脚本。无法确认成员作用时保留结构，使用 Proteus 界面转换或取得已配置外置固件的工程，不能为了套用示例而批量删除 ZIP 成员。
+带 `FIRMWARE.XML` 的 VSM Studio 工程可能重新生成 `PROGRAM`，其日志 dock 也可能没有库可读取的独立窗口。当前构建中，`Circuit(template_project=...)` 新建电路后调用 `save()`，由 API 移除模板的 `FIRMWARE*` 成员，防止模板固件项目覆盖随后用 `Simulation.set_firmware()` 指定的应用；原模板保持不变。`Circuit.open(path)` 编辑已有电路则保留这些成员，不能换用新建构造器来绕过未知对象或保留要求。已有工程若受内嵌构建影响，保留结构并报告公开 API 的转换缺口，使用已配置外置固件的工程继续；不直接删除 ZIP 成员，不回退 GUI。
 
 ## 图表与模拟量
 
@@ -179,7 +194,7 @@ finally:
     s.close()
 ```
 
-`set_generator_properties(source, destination, name, **properties)` 只改已存在的发生器属性，值必须保持相同 ASCII 字节长度，并保存到新路径。先查 `generators(source)`；长度不符时改用界面配置，不能补零、截断或绕过校验。普通 `VSOURCE` 元件与专用 generator 不同，前者可通过元件 API 修改变长值。
+`set_generator_properties(source, destination, name, **properties)` 只改已存在的发生器属性，值必须保持相同 ASCII 字节长度，并保存到新路径。先查 `generators(source)`；长度不符时报告此公开 API 的限制，不使用界面配置，也不能补零、截断或绕过校验。普通 `VSOURCE` 元件与专用 generator 不同，前者可通过元件 API 修改变长值。
 
 `graphs(s)` 列出可用图表名称和索引，`export_graph()` 可按唯一名称或索引选择。默认 `simulate=True` 清除该图旧结果并执行新仿真；`False` 只读缓存，不能用来证明改参数后的行为。若要保留新结果，随后保存会话。
 
@@ -189,6 +204,6 @@ CSV 保留轴和全部 trace，包括重名列；`sample_graph(data, name, x, oc
 
 优先用当前任务脚本里的少量断言，核对目标值、应连接/应分离的引脚或预期行为。文件级断言不能代替原生编译，原生编译不能代替电气行为或视觉检查。
 
-仅安装 wheel 就能执行本文件的公共 API 示例：新建/编辑任务保存后重开并断言值和网络；原生验收另导出 SDF；固件任务按目标行为核对日志；测量任务保存新仿真的原始 CSV。所需 Proteus 程序、模型和工程仍须由本机安装或用户提供。
+通过 GitHub 源码归档或离线 wheel 正式安装库后即可执行本文件的公共 API 示例，不需要保留库源码：新建/编辑任务保存后重开并断言值和网络；原生验收另导出 SDF；固件任务按目标行为核对日志；测量任务保存新仿真的原始 CSV。所需 Proteus 程序、模型和工程仍须由本机安装或用户提供。
 
 完整库回归在独立库仓库维护，本技能不携带或要求源码测试脚本。不要在技能目录运行相对路径 `api/check_*.py`，不要把另一个仓库的历史通过结果当作当前任务验证。

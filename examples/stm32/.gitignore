@@ -1,0 +1,10 @@
+output*/
+STM32-template.pdsprj*
+Project Backups/
+template-normalization.json
+*.gif
+*.manifest.json
+firmware/*.elf
+firmware/*.map
+firmware/*.disassembly.txt
+firmware/build-report.json

@@ -1,0 +1,691 @@
+{
+  "date": "2026-09-13",
+  "environment": {
+    "os": "Windows",
+    "python": "3.12",
+    "proteus": "8.16.36097",
+    "library": "proteus-automatic-api 0.2.0",
+    "wheel_sha256": "5b0d1ae5aa5e38478d1c8754c06ca21a162e16c7f8bfa27b2f6f2f7d0b96ad75"
+  },
+  "independent_method": "A separate agent rebuilt the exact bilingual prompts without reading the showcase implementation.",
+  "independent_scenes": {
+    "hold": {
+      "passed": true,
+      "prompt_sha256": "bd8f0b379830284bc1cd318f0373d85e308d8eb156c407e43a67d57a5bd59d2d",
+      "template_sha256": "f3b4ae06750b7f4c000fc903d23038980a378456fc11796d3fb7342b81aba16b",
+      "template_unchanged": true,
+      "firmware_sha256": "678cf419b982a54c470d148cc0d732abdbc03a977ced56818aad5743d1b47947",
+      "observed": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "stages": [
+        {
+          "action": null,
+          "command": null,
+          "run": {
+            "state": "paused",
+            "simulation_seconds": 0.05,
+            "status_text": "PAUSED: 0.050000000s",
+            "reason": "Execution timer breakpoint: 0.050000000s",
+            "completion": "timer_breakpoint",
+            "requested_seconds": 0.05,
+            "start_seconds": 0.0,
+            "end_seconds": 0.05,
+            "actual_elapsed_seconds": 0.05,
+            "overshoot_seconds": 0.0,
+            "tolerance_seconds": 0.003
+          }
+        },
+        {
+          "action": [
+            "press",
+            "SW1"
+          ],
+          "command": {
+            "ref": "SW1",
+            "state": 1,
+            "changed": true,
+            "command_time_seconds": 0.05
+          },
+          "run": {
+            "state": "paused",
+            "simulation_seconds": 0.1,
+            "status_text": "PAUSED: 0.100000000s",
+            "reason": "Execution timer breakpoint: 0.100000000s",
+            "completion": "timer_breakpoint",
+            "requested_seconds": 0.05,
+            "start_seconds": 0.05,
+            "end_seconds": 0.1,
+            "actual_elapsed_seconds": 0.05,
+            "overshoot_seconds": 0.0,
+            "tolerance_seconds": 0.003
+          }
+        },
+        {
+          "action": [
+            "release",
+            "SW1"
+          ],
+          "command": {
+            "ref": "SW1",
+            "state": 0,
+            "changed": true,
+            "command_time_seconds": 0.1
+          },
+          "run": {
+            "state": "paused",
+            "simulation_seconds": 0.15,
+            "status_text": "PAUSED: 0.150000000s",
+            "reason": "Execution timer breakpoint: 0.150000000s",
+            "completion": "timer_breakpoint",
+            "requested_seconds": 0.05,
+            "start_seconds": 0.1,
+            "end_seconds": 0.15,
+            "actual_elapsed_seconds": 0.04999999999999999,
+            "overshoot_seconds": 0.0,
+            "tolerance_seconds": 0.003
+          }
+        },
+        {
+          "action": [
+            "press",
+            "SW1"
+          ],
+          "command": {
+            "ref": "SW1",
+            "state": 1,
+            "changed": true,
+            "command_time_seconds": 0.15
+          },
+          "run": {
+            "state": "paused",
+            "simulation_seconds": 0.2,
+            "status_text": "PAUSED: 0.200000000s",
+            "reason": "",
+            "completion": "timer_roundoff_pause",
+            "timer_remaining_seconds": 1.3877787807814457e-17,
+            "requested_seconds": 0.05,
+            "start_seconds": 0.15,
+            "end_seconds": 0.2,
+            "actual_elapsed_seconds": 0.05000000000000002,
+            "overshoot_seconds": 0.0,
+            "tolerance_seconds": 0.003
+          }
+        },
+        {
+          "action": [
+            "release",
+            "SW1"
+          ],
+          "command": {
+            "ref": "SW1",
+            "state": 0,
+            "changed": true,
+            "command_time_seconds": 0.2
+          },
+          "run": {
+            "state": "paused",
+            "simulation_seconds": 0.25,
+            "status_text": "PAUSED: 0.250000000s",
+            "reason": "",
+            "completion": "timer_roundoff_pause",
+            "timer_remaining_seconds": 1.3877787807814457e-17,
+            "requested_seconds": 0.05,
+            "start_seconds": 0.2,
+            "end_seconds": 0.25,
+            "actual_elapsed_seconds": 0.04999999999999999,
+            "overshoot_seconds": 0.0,
+            "tolerance_seconds": 0.003
+          }
+        }
+      ],
+      "gpio_events": {
+        "5": [
+          {
+            "ref": "U1",
+            "port": 0,
+            "pin": 5,
+            "value": 0,
+            "seconds": 0.002507875
+          },
+          {
+            "ref": "U1",
+            "port": 0,
+            "pin": 5,
+            "value": 1,
+            "seconds": 0.051649125
+          },
+          {
+            "ref": "U1",
+            "port": 0,
+            "pin": 5,
+            "value": 0,
+            "seconds": 0.101492375
+          },
+          {
+            "ref": "U1",
+            "port": 0,
+            "pin": 5,
+            "value": 1,
+            "seconds": 0.151335625
+          },
+          {
+            "ref": "U1",
+            "port": 0,
+            "pin": 5,
+            "value": 0,
+            "seconds": 0.201178875
+          }
+        ]
+      },
+      "SDF": "passed",
+      "saved_reopen": "passed",
+      "script_sha256": "6fe41db4c050dee38bcee6028f0546544bc944a209628431fcbcd2254acaf60c"
+    },
+    "toggle": {
+      "passed": true,
+      "prompt_sha256": "bd8f0b379830284bc1cd318f0373d85e308d8eb156c407e43a67d57a5bd59d2d",
+      "template_sha256": "f3b4ae06750b7f4c000fc903d23038980a378456fc11796d3fb7342b81aba16b",
+      "template_unchanged": true,
+      "firmware_sha256": "d994a8393ede2d175ceab7b2ade6d214de1ab93fa4f06f6e3babda1f77141aeb",
+      "observed": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          1
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "stages": [
+        {
+          "action": null,
+          "command": null,
+          "run": {
+            "state": "paused",
+            "simulation_seconds": 0.05,
+            "status_text": "PAUSED: 0.050000000s",
+            "reason": "Execution timer breakpoint: 0.050000000s",
+            "completion": "timer_breakpoint",
+            "requested_seconds": 0.05,
+            "start_seconds": 0.0,
+            "end_seconds": 0.05,
+            "actual_elapsed_seconds": 0.05,
+            "overshoot_seconds": 0.0,
+            "tolerance_seconds": 0.003
+          }
+        },
+        {
+          "action": [
+            "press",
+            "SW1"
+          ],
+          "command": {
+            "ref": "SW1",
+            "state": 1,
+            "changed": true,
+            "command_time_seconds": 0.05
+          },
+          "run": {
+            "state": "paused",
+            "simulation_seconds": 0.1,
+            "status_text": "PAUSED: 0.100000000s",
+            "reason": "Execution timer breakpoint: 0.100000000s",
+            "completion": "timer_breakpoint",
+            "requested_seconds": 0.05,
+            "start_seconds": 0.05,
+            "end_seconds": 0.1,
+            "actual_elapsed_seconds": 0.05,
+            "overshoot_seconds": 0.0,
+            "tolerance_seconds": 0.003
+          }
+        },
+        {
+          "action": null,
+          "command": null,
+          "run": {
+            "state": "paused",
+            "simulation_seconds": 0.15,
+            "status_text": "PAUSED: 0.150000000s",
+            "reason": "Execution timer breakpoint: 0.150000000s",
+            "completion": "timer_breakpoint",
+            "requested_seconds": 0.05,
+            "start_seconds": 0.1,
+            "end_seconds": 0.15,
+            "actual_elapsed_seconds": 0.04999999999999999,
+            "overshoot_seconds": 0.0,
+            "tolerance_seconds": 0.003
+          }
+        },
+        {
+          "action": [
+            "release",
+            "SW1"
+          ],
+          "command": {
+            "ref": "SW1",
+            "state": 0,
+            "changed": true,
+            "command_time_seconds": 0.15
+          },
+          "run": {
+            "state": "paused",
+            "simulation_seconds": 0.2,
+            "status_text": "PAUSED: 0.200000000s",
+            "reason": "",
+            "completion": "timer_roundoff_pause",
+            "timer_remaining_seconds": 1.3877787807814457e-17,
+            "requested_seconds": 0.05,
+            "start_seconds": 0.15,
+            "end_seconds": 0.2,
+            "actual_elapsed_seconds": 0.05000000000000002,
+            "overshoot_seconds": 0.0,
+            "tolerance_seconds": 0.003
+          }
+        },
+        {
+          "action": [
+            "press",
+            "SW1"
+          ],
+          "command": {
+            "ref": "SW1",
+            "state": 1,
+            "changed": true,
+            "command_time_seconds": 0.2
+          },
+          "run": {
+            "state": "paused",
+            "simulation_seconds": 0.25,
+            "status_text": "PAUSED: 0.250000000s",
+            "reason": "",
+            "completion": "timer_roundoff_pause",
+            "timer_remaining_seconds": 1.3877787807814457e-17,
+            "requested_seconds": 0.05,
+            "start_seconds": 0.2,
+            "end_seconds": 0.25,
+            "actual_elapsed_seconds": 0.04999999999999999,
+            "overshoot_seconds": 0.0,
+            "tolerance_seconds": 0.003
+          }
+        },
+        {
+          "action": [
+            "release",
+            "SW1"
+          ],
+          "command": {
+            "ref": "SW1",
+            "state": 0,
+            "changed": true,
+            "command_time_seconds": 0.25
+          },
+          "run": {
+            "state": "paused",
+            "simulation_seconds": 0.3,
+            "status_text": "PAUSED: 0.300000000s",
+            "reason": "",
+            "completion": "timer_roundoff_pause",
+            "timer_remaining_seconds": 1.3877787807814457e-17,
+            "requested_seconds": 0.05,
+            "start_seconds": 0.25,
+            "end_seconds": 0.3,
+            "actual_elapsed_seconds": 0.04999999999999999,
+            "overshoot_seconds": 0.0,
+            "tolerance_seconds": 0.003
+          }
+        }
+      ],
+      "gpio_events": {
+        "5": [
+          {
+            "ref": "U1",
+            "port": 0,
+            "pin": 5,
+            "value": 0,
+            "seconds": 0.002506
+          },
+          {
+            "ref": "U1",
+            "port": 0,
+            "pin": 5,
+            "value": 1,
+            "seconds": 0.0516315
+          },
+          {
+            "ref": "U1",
+            "port": 0,
+            "pin": 5,
+            "value": 0,
+            "seconds": 0.20114125
+          }
+        ]
+      },
+      "SDF": "passed",
+      "saved_reopen": "passed",
+      "script_sha256": "6fe41db4c050dee38bcee6028f0546544bc944a209628431fcbcd2254acaf60c"
+    },
+    "dual": {
+      "passed": true,
+      "prompt_sha256": "bd8f0b379830284bc1cd318f0373d85e308d8eb156c407e43a67d57a5bd59d2d",
+      "template_sha256": "f3b4ae06750b7f4c000fc903d23038980a378456fc11796d3fb7342b81aba16b",
+      "template_unchanged": true,
+      "firmware_sha256": "398fbce4f3e4cd53958144f3504313e74a8e03cd712fc2b68001272535fcb65b",
+      "observed": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "stages": [
+        {
+          "action": null,
+          "command": null,
+          "run": {
+            "state": "paused",
+            "simulation_seconds": 0.05,
+            "status_text": "PAUSED: 0.050000000s",
+            "reason": "Execution timer breakpoint: 0.050000000s",
+            "completion": "timer_breakpoint",
+            "requested_seconds": 0.05,
+            "start_seconds": 0.0,
+            "end_seconds": 0.05,
+            "actual_elapsed_seconds": 0.05,
+            "overshoot_seconds": 0.0,
+            "tolerance_seconds": 0.003
+          }
+        },
+        {
+          "action": [
+            "press",
+            "SW1"
+          ],
+          "command": {
+            "ref": "SW1",
+            "state": 1,
+            "changed": true,
+            "command_time_seconds": 0.05
+          },
+          "run": {
+            "state": "paused",
+            "simulation_seconds": 0.1,
+            "status_text": "PAUSED: 0.100000000s",
+            "reason": "Execution timer breakpoint: 0.100000000s",
+            "completion": "timer_breakpoint",
+            "requested_seconds": 0.05,
+            "start_seconds": 0.05,
+            "end_seconds": 0.1,
+            "actual_elapsed_seconds": 0.05,
+            "overshoot_seconds": 0.0,
+            "tolerance_seconds": 0.003
+          }
+        },
+        {
+          "action": [
+            "press",
+            "SW2"
+          ],
+          "command": {
+            "ref": "SW2",
+            "state": 1,
+            "changed": true,
+            "command_time_seconds": 0.1
+          },
+          "run": {
+            "state": "paused",
+            "simulation_seconds": 0.15,
+            "status_text": "PAUSED: 0.150000000s",
+            "reason": "Execution timer breakpoint: 0.150000000s",
+            "completion": "timer_breakpoint",
+            "requested_seconds": 0.05,
+            "start_seconds": 0.1,
+            "end_seconds": 0.15,
+            "actual_elapsed_seconds": 0.04999999999999999,
+            "overshoot_seconds": 0.0,
+            "tolerance_seconds": 0.003
+          }
+        },
+        {
+          "action": [
+            "release",
+            "SW1"
+          ],
+          "command": {
+            "ref": "SW1",
+            "state": 0,
+            "changed": true,
+            "command_time_seconds": 0.15
+          },
+          "run": {
+            "state": "paused",
+            "simulation_seconds": 0.2,
+            "status_text": "PAUSED: 0.200000000s",
+            "reason": "",
+            "completion": "timer_roundoff_pause",
+            "timer_remaining_seconds": 1.3877787807814457e-17,
+            "requested_seconds": 0.05,
+            "start_seconds": 0.15,
+            "end_seconds": 0.2,
+            "actual_elapsed_seconds": 0.05000000000000002,
+            "overshoot_seconds": 0.0,
+            "tolerance_seconds": 0.003
+          }
+        },
+        {
+          "action": [
+            "release",
+            "SW2"
+          ],
+          "command": {
+            "ref": "SW2",
+            "state": 0,
+            "changed": true,
+            "command_time_seconds": 0.2
+          },
+          "run": {
+            "state": "paused",
+            "simulation_seconds": 0.25,
+            "status_text": "PAUSED: 0.250000000s",
+            "reason": "",
+            "completion": "timer_roundoff_pause",
+            "timer_remaining_seconds": 1.3877787807814457e-17,
+            "requested_seconds": 0.05,
+            "start_seconds": 0.2,
+            "end_seconds": 0.25,
+            "actual_elapsed_seconds": 0.04999999999999999,
+            "overshoot_seconds": 0.0,
+            "tolerance_seconds": 0.003
+          }
+        }
+      ],
+      "gpio_events": {
+        "5": [
+          {
+            "ref": "U1",
+            "port": 0,
+            "pin": 5,
+            "value": 0,
+            "seconds": 0.002505875
+          },
+          {
+            "ref": "U1",
+            "port": 0,
+            "pin": 5,
+            "value": 1,
+            "seconds": 0.051648875
+          },
+          {
+            "ref": "U1",
+            "port": 0,
+            "pin": 5,
+            "value": 1,
+            "seconds": 0.101492375
+          },
+          {
+            "ref": "U1",
+            "port": 0,
+            "pin": 5,
+            "value": 0,
+            "seconds": 0.151335875
+          },
+          {
+            "ref": "U1",
+            "port": 0,
+            "pin": 5,
+            "value": 0,
+            "seconds": 0.201179375
+          }
+        ],
+        "6": [
+          {
+            "ref": "U1",
+            "port": 0,
+            "pin": 6,
+            "value": 0,
+            "seconds": 0.002505875
+          },
+          {
+            "ref": "U1",
+            "port": 0,
+            "pin": 6,
+            "value": 0,
+            "seconds": 0.051648875
+          },
+          {
+            "ref": "U1",
+            "port": 0,
+            "pin": 6,
+            "value": 1,
+            "seconds": 0.101492375
+          },
+          {
+            "ref": "U1",
+            "port": 0,
+            "pin": 6,
+            "value": 1,
+            "seconds": 0.151335875
+          },
+          {
+            "ref": "U1",
+            "port": 0,
+            "pin": 6,
+            "value": 0,
+            "seconds": 0.201179375
+          }
+        ]
+      },
+      "SDF": "passed",
+      "saved_reopen": "passed",
+      "script_sha256": "6fe41db4c050dee38bcee6028f0546544bc944a209628431fcbcd2254acaf60c"
+    }
+  },
+  "media": {
+    "hold": {
+      "gif": "stm32-hold.gif",
+      "source_frame_count": 1000,
+      "gif_frame_count": 108,
+      "duration_ms": 29220,
+      "recording_duration_seconds": 246.1866235999987,
+      "all_source_frames_used": false,
+      "all_native_frames_used": true,
+      "waiting_segments_removed": true,
+      "native_interface_only": true,
+      "retained_frame_count": 504,
+      "omitted_waiting_frame_count": 496,
+      "retained_duration_seconds": 163.32015050001064,
+      "speed": 6,
+      "final_hold_added_ms": 2000,
+      "size": [
+        1280,
+        644
+      ],
+      "bytes": 4679534,
+      "sha256": "f36228e3cb816fc6fb1e4f9e6109cc23092f8a61b7525a872f7e014f76e5a106"
+    },
+    "toggle": {
+      "gif": "stm32-toggle.gif",
+      "source_frame_count": 1018,
+      "gif_frame_count": 118,
+      "duration_ms": 30310,
+      "recording_duration_seconds": 251.1618537999966,
+      "all_source_frames_used": false,
+      "all_native_frames_used": true,
+      "waiting_segments_removed": true,
+      "native_interface_only": true,
+      "retained_frame_count": 531,
+      "omitted_waiting_frame_count": 487,
+      "retained_duration_seconds": 169.8603159000122,
+      "speed": 6,
+      "final_hold_added_ms": 2000,
+      "size": [
+        1280,
+        644
+      ],
+      "bytes": 4910681,
+      "sha256": "6e315f592bffed4ffdec16a171f678035a64a9ef8eb5d963c4124bce36253c53"
+    },
+    "dual": {
+      "gif": "stm32-dual.gif",
+      "source_frame_count": 1342,
+      "gif_frame_count": 143,
+      "duration_ms": 37060,
+      "recording_duration_seconds": 325.8774833999996,
+      "all_source_frames_used": false,
+      "all_native_frames_used": true,
+      "waiting_segments_removed": true,
+      "native_interface_only": true,
+      "retained_frame_count": 650,
+      "omitted_waiting_frame_count": 692,
+      "retained_duration_seconds": 210.37544029999844,
+      "speed": 6,
+      "final_hold_added_ms": 2000,
+      "size": [
+        1280,
+        644
+      ],
+      "bytes": 6851784,
+      "sha256": "e925e535883ddda4a11d592dc979cdf0464922111310ef6d97d71dae6cfb6552"
+    }
+  }
+}

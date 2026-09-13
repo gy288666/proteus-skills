@@ -1,0 +1,4289 @@
+{
+  "recording": "D:\\Folder\\Proteus Skills\\showcase-pure-api\\toggle-recorded-01\\recording",
+  "gif": "stm32-toggle.gif",
+  "source_frame_count": 1018,
+  "retained_frame_count": 531,
+  "omitted_waiting_frame_count": 487,
+  "retained_duration_seconds": 169.8603159000122,
+  "gif_frame_count": 118,
+  "all_source_frames_used": false,
+  "all_native_frames_used": true,
+  "waiting_segments_removed": true,
+  "speed": 6,
+  "final_hold_added_ms": 2000,
+  "duration_ms": 30310,
+  "size": [
+    1280,
+    644
+  ],
+  "native_interface_only": true,
+  "palette_colors": 128,
+  "optimize": true,
+  "reserved_palette_colors": [
+    [
+      255,
+      255,
+      28
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "bytes": 4910681,
+  "under_10_mb": true,
+  "sha256": "6e315f592bffed4ffdec16a171f678035a64a9ef8eb5d963c4124bce36253c53",
+  "recording_duration_seconds": 251.1618537999966,
+  "actual_capture_fps": 4.053163267422952,
+  "frames": [
+    {
+      "index": 22,
+      "source": "raw/000022.png",
+      "raw": "raw/000022.png",
+      "elapsed_seconds": 3.673892699996941,
+      "source_duration_seconds": 0.25119989999802783,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 23,
+      "source": "raw/000023.png",
+      "raw": "raw/000023.png",
+      "elapsed_seconds": 3.9250925999949686,
+      "source_duration_seconds": 0.24507530000119004,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 24,
+      "source": "raw/000024.png",
+      "raw": "raw/000024.png",
+      "elapsed_seconds": 4.170167899996159,
+      "source_duration_seconds": 0.3557529000026989,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 25,
+      "source": "raw/000025.png",
+      "raw": "raw/000025.png",
+      "elapsed_seconds": 4.5259207999988575,
+      "source_duration_seconds": 0.3637269000028027,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 26,
+      "source": "raw/000026.png",
+      "raw": "raw/000026.png",
+      "elapsed_seconds": 4.88964770000166,
+      "source_duration_seconds": 0.36019699999451404,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 27,
+      "source": "raw/000027.png",
+      "raw": "raw/000027.png",
+      "elapsed_seconds": 5.249844699996174,
+      "source_duration_seconds": 0.31226389999937965,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 28,
+      "source": "raw/000028.png",
+      "raw": "raw/000028.png",
+      "elapsed_seconds": 5.562108599995554,
+      "source_duration_seconds": 0.3062714000043343,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 29,
+      "source": "raw/000029.png",
+      "raw": "raw/000029.png",
+      "elapsed_seconds": 5.868379999999888,
+      "source_duration_seconds": 0.3463486999971792,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 30,
+      "source": "raw/000030.png",
+      "raw": "raw/000030.png",
+      "elapsed_seconds": 6.2147286999970675,
+      "source_duration_seconds": 0.25626999999803957,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 31,
+      "source": "raw/000031.png",
+      "raw": "raw/000031.png",
+      "elapsed_seconds": 6.470998699995107,
+      "source_duration_seconds": 0.312191700002586,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 32,
+      "source": "raw/000032.png",
+      "raw": "raw/000032.png",
+      "elapsed_seconds": 6.783190399997693,
+      "source_duration_seconds": 0.3086009000035119,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 33,
+      "source": "raw/000033.png",
+      "raw": "raw/000033.png",
+      "elapsed_seconds": 7.091791300001205,
+      "source_duration_seconds": 0.3234541999991052,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 34,
+      "source": "raw/000034.png",
+      "raw": "raw/000034.png",
+      "elapsed_seconds": 7.41524550000031,
+      "source_duration_seconds": 0.40740959999675397,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 35,
+      "source": "raw/000035.png",
+      "raw": "raw/000035.png",
+      "elapsed_seconds": 7.822655099997064,
+      "source_duration_seconds": 0.5221945000012056,
+      "gif_duration_ms": 90
+    },
+    {
+      "index": 36,
+      "source": "raw/000036.png",
+      "raw": "raw/000036.png",
+      "elapsed_seconds": 8.34484959999827,
+      "source_duration_seconds": 0.3250296999976854,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 37,
+      "source": "raw/000037.png",
+      "raw": "raw/000037.png",
+      "elapsed_seconds": 8.669879299995955,
+      "source_duration_seconds": 0.3233038000034867,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 38,
+      "source": "raw/000038.png",
+      "raw": "raw/000038.png",
+      "elapsed_seconds": 8.993183099999442,
+      "source_duration_seconds": 0.3303042999978061,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 39,
+      "source": "raw/000039.png",
+      "raw": "raw/000039.png",
+      "elapsed_seconds": 9.323487399997248,
+      "source_duration_seconds": 0.3134535999997752,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 40,
+      "source": "raw/000040.png",
+      "raw": "raw/000040.png",
+      "elapsed_seconds": 9.636940999997023,
+      "source_duration_seconds": 0.3482111999983317,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 41,
+      "source": "raw/000041.png",
+      "raw": "raw/000041.png",
+      "elapsed_seconds": 9.985152199995355,
+      "source_duration_seconds": 0.3341108000022359,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 42,
+      "source": "raw/000042.png",
+      "raw": "raw/000042.png",
+      "elapsed_seconds": 10.31926299999759,
+      "source_duration_seconds": 0.3235502000025008,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 43,
+      "source": "raw/000043.png",
+      "raw": "raw/000043.png",
+      "elapsed_seconds": 10.642813200000091,
+      "source_duration_seconds": 0.37874469999951543,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 44,
+      "source": "raw/000044.png",
+      "raw": "raw/000044.png",
+      "elapsed_seconds": 11.021557899999607,
+      "source_duration_seconds": 0.34074780000082683,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 45,
+      "source": "raw/000045.png",
+      "raw": "raw/000045.png",
+      "elapsed_seconds": 11.362305700000434,
+      "source_duration_seconds": 0.29999189999944065,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 46,
+      "source": "raw/000046.png",
+      "raw": "raw/000046.png",
+      "elapsed_seconds": 11.662297599999874,
+      "source_duration_seconds": 0.3159522999994806,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 47,
+      "source": "raw/000047.png",
+      "raw": "raw/000047.png",
+      "elapsed_seconds": 11.978249899999355,
+      "source_duration_seconds": 0.3272422000009101,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 48,
+      "source": "raw/000048.png",
+      "raw": "raw/000048.png",
+      "elapsed_seconds": 12.305492100000265,
+      "source_duration_seconds": 0.3610253000006196,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 49,
+      "source": "raw/000049.png",
+      "raw": "raw/000049.png",
+      "elapsed_seconds": 12.666517400000885,
+      "source_duration_seconds": 0.2910434000004898,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 50,
+      "source": "raw/000050.png",
+      "raw": "raw/000050.png",
+      "elapsed_seconds": 12.957560800001374,
+      "source_duration_seconds": 0.3977677999937441,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 51,
+      "source": "raw/000051.png",
+      "raw": "raw/000051.png",
+      "elapsed_seconds": 13.355328599995119,
+      "source_duration_seconds": 0.398600800006534,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 52,
+      "source": "raw/000052.png",
+      "raw": "raw/000052.png",
+      "elapsed_seconds": 13.753929400001653,
+      "source_duration_seconds": 0.36150389999966137,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 53,
+      "source": "raw/000053.png",
+      "raw": "raw/000053.png",
+      "elapsed_seconds": 14.115433300001314,
+      "source_duration_seconds": 0.30208699999639066,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 54,
+      "source": "raw/000054.png",
+      "raw": "raw/000054.png",
+      "elapsed_seconds": 14.417520299997705,
+      "source_duration_seconds": 0.31628810000256635,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 55,
+      "source": "raw/000055.png",
+      "raw": "raw/000055.png",
+      "elapsed_seconds": 14.733808400000271,
+      "source_duration_seconds": 0.3774268999986816,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 56,
+      "source": "raw/000056.png",
+      "raw": "raw/000056.png",
+      "elapsed_seconds": 15.111235299998953,
+      "source_duration_seconds": 0.3007978000023286,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 57,
+      "source": "raw/000057.png",
+      "raw": "raw/000057.png",
+      "elapsed_seconds": 15.412033100001281,
+      "source_duration_seconds": 0.2825948999961838,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 58,
+      "source": "raw/000058.png",
+      "raw": "raw/000058.png",
+      "elapsed_seconds": 15.694627999997465,
+      "source_duration_seconds": 0.41610310000396566,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 59,
+      "source": "raw/000059.png",
+      "raw": "raw/000059.png",
+      "elapsed_seconds": 16.11073110000143,
+      "source_duration_seconds": 0.32598659999348456,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 60,
+      "source": "raw/000060.png",
+      "raw": "raw/000060.png",
+      "elapsed_seconds": 16.436717699994915,
+      "source_duration_seconds": 0.3045216000027722,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 61,
+      "source": "raw/000061.png",
+      "raw": "raw/000061.png",
+      "elapsed_seconds": 16.741239299997687,
+      "source_duration_seconds": 0.32483810000121593,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 62,
+      "source": "raw/000062.png",
+      "raw": "raw/000062.png",
+      "elapsed_seconds": 17.066077399998903,
+      "source_duration_seconds": 0.30161059999954887,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 63,
+      "source": "raw/000063.png",
+      "raw": "raw/000063.png",
+      "elapsed_seconds": 17.367687999998452,
+      "source_duration_seconds": 0.3583045999985188,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 64,
+      "source": "raw/000064.png",
+      "raw": "raw/000064.png",
+      "elapsed_seconds": 17.72599259999697,
+      "source_duration_seconds": 0.31472320000466425,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 65,
+      "source": "raw/000065.png",
+      "raw": "raw/000065.png",
+      "elapsed_seconds": 18.040715800001635,
+      "source_duration_seconds": 0.29482769999594893,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 66,
+      "source": "raw/000066.png",
+      "raw": "raw/000066.png",
+      "elapsed_seconds": 18.335543499997584,
+      "source_duration_seconds": 0.2920474999991711,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 67,
+      "source": "raw/000067.png",
+      "raw": "raw/000067.png",
+      "elapsed_seconds": 18.627590999996755,
+      "source_duration_seconds": 0.3427516000010655,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 68,
+      "source": "raw/000068.png",
+      "raw": "raw/000068.png",
+      "elapsed_seconds": 18.97034259999782,
+      "source_duration_seconds": 0.3126832999987528,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 69,
+      "source": "raw/000069.png",
+      "raw": "raw/000069.png",
+      "elapsed_seconds": 19.283025899996574,
+      "source_duration_seconds": 0.20845769999868935,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 95,
+      "source": "raw/000095.png",
+      "raw": "raw/000095.png",
+      "elapsed_seconds": 23.661706799997773,
+      "source_duration_seconds": 0.24210719999973662,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 96,
+      "source": "raw/000096.png",
+      "raw": "raw/000096.png",
+      "elapsed_seconds": 23.90381399999751,
+      "source_duration_seconds": 0.23790700000245124,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 97,
+      "source": "raw/000097.png",
+      "raw": "raw/000097.png",
+      "elapsed_seconds": 24.14172099999996,
+      "source_duration_seconds": 0.3482762999992701,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 98,
+      "source": "raw/000098.png",
+      "raw": "raw/000098.png",
+      "elapsed_seconds": 24.48999729999923,
+      "source_duration_seconds": 0.3233741000003647,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 99,
+      "source": "raw/000099.png",
+      "raw": "raw/000099.png",
+      "elapsed_seconds": 24.813371399999596,
+      "source_duration_seconds": 0.3560374000007869,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 100,
+      "source": "raw/000100.png",
+      "raw": "raw/000100.png",
+      "elapsed_seconds": 25.169408800000383,
+      "source_duration_seconds": 0.3306841000012355,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 101,
+      "source": "raw/000101.png",
+      "raw": "raw/000101.png",
+      "elapsed_seconds": 25.50009290000162,
+      "source_duration_seconds": 0.33038289999967674,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 102,
+      "source": "raw/000102.png",
+      "raw": "raw/000102.png",
+      "elapsed_seconds": 25.830475800001295,
+      "source_duration_seconds": 0.4017445999998017,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 103,
+      "source": "raw/000103.png",
+      "raw": "raw/000103.png",
+      "elapsed_seconds": 26.232220400001097,
+      "source_duration_seconds": 0.3066341999947326,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 104,
+      "source": "raw/000104.png",
+      "raw": "raw/000104.png",
+      "elapsed_seconds": 26.53885459999583,
+      "source_duration_seconds": 0.37071280000236584,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 105,
+      "source": "raw/000105.png",
+      "raw": "raw/000105.png",
+      "elapsed_seconds": 26.909567399998195,
+      "source_duration_seconds": 0.3147545000028913,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 106,
+      "source": "raw/000106.png",
+      "raw": "raw/000106.png",
+      "elapsed_seconds": 27.224321900001087,
+      "source_duration_seconds": 0.3479107999955886,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 107,
+      "source": "raw/000107.png",
+      "raw": "raw/000107.png",
+      "elapsed_seconds": 27.572232699996675,
+      "source_duration_seconds": 0.35158750000118744,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 108,
+      "source": "raw/000108.png",
+      "raw": "raw/000108.png",
+      "elapsed_seconds": 27.923820199997863,
+      "source_duration_seconds": 0.3208061000041198,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 109,
+      "source": "raw/000109.png",
+      "raw": "raw/000109.png",
+      "elapsed_seconds": 28.244626300001983,
+      "source_duration_seconds": 0.334962999993877,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 110,
+      "source": "raw/000110.png",
+      "raw": "raw/000110.png",
+      "elapsed_seconds": 28.57958929999586,
+      "source_duration_seconds": 0.3387034000043059,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 111,
+      "source": "raw/000111.png",
+      "raw": "raw/000111.png",
+      "elapsed_seconds": 28.918292700000165,
+      "source_duration_seconds": 0.31570329999522073,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 137,
+      "source": "raw/000137.png",
+      "raw": "raw/000137.png",
+      "elapsed_seconds": 33.409598799997184,
+      "source_duration_seconds": 0.2317710999996052,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 138,
+      "source": "raw/000138.png",
+      "raw": "raw/000138.png",
+      "elapsed_seconds": 33.64136989999679,
+      "source_duration_seconds": 0.30535510000481736,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 139,
+      "source": "raw/000139.png",
+      "raw": "raw/000139.png",
+      "elapsed_seconds": 33.94672500000161,
+      "source_duration_seconds": 0.36536059999343706,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 140,
+      "source": "raw/000140.png",
+      "raw": "raw/000140.png",
+      "elapsed_seconds": 34.312085599995044,
+      "source_duration_seconds": 0.3572241000001668,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 141,
+      "source": "raw/000141.png",
+      "raw": "raw/000141.png",
+      "elapsed_seconds": 34.66930969999521,
+      "source_duration_seconds": 0.3654746000029263,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 142,
+      "source": "raw/000142.png",
+      "raw": "raw/000142.png",
+      "elapsed_seconds": 35.03478429999814,
+      "source_duration_seconds": 0.3456348999970942,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 143,
+      "source": "raw/000143.png",
+      "raw": "raw/000143.png",
+      "elapsed_seconds": 35.38041919999523,
+      "source_duration_seconds": 0.3879515000007814,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 144,
+      "source": "raw/000144.png",
+      "raw": "raw/000144.png",
+      "elapsed_seconds": 35.76837069999601,
+      "source_duration_seconds": 0.34782719999930123,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 145,
+      "source": "raw/000145.png",
+      "raw": "raw/000145.png",
+      "elapsed_seconds": 36.11619789999531,
+      "source_duration_seconds": 0.34145859999989625,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 146,
+      "source": "raw/000146.png",
+      "raw": "raw/000146.png",
+      "elapsed_seconds": 36.45765649999521,
+      "source_duration_seconds": 0.30781100000604056,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 147,
+      "source": "raw/000147.png",
+      "raw": "raw/000147.png",
+      "elapsed_seconds": 36.76546750000125,
+      "source_duration_seconds": 0.36663949999638135,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 148,
+      "source": "raw/000148.png",
+      "raw": "raw/000148.png",
+      "elapsed_seconds": 37.13210699999763,
+      "source_duration_seconds": 0.33246040000085486,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 149,
+      "source": "raw/000149.png",
+      "raw": "raw/000149.png",
+      "elapsed_seconds": 37.46456739999849,
+      "source_duration_seconds": 0.30551479999849107,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 150,
+      "source": "raw/000150.png",
+      "raw": "raw/000150.png",
+      "elapsed_seconds": 37.77008219999698,
+      "source_duration_seconds": 0.33761519999825396,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 151,
+      "source": "raw/000151.png",
+      "raw": "raw/000151.png",
+      "elapsed_seconds": 38.10769739999523,
+      "source_duration_seconds": 0.31347290000121575,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 152,
+      "source": "raw/000152.png",
+      "raw": "raw/000152.png",
+      "elapsed_seconds": 38.42117029999645,
+      "source_duration_seconds": 0.28808740000386024,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 153,
+      "source": "raw/000153.png",
+      "raw": "raw/000153.png",
+      "elapsed_seconds": 38.70925770000031,
+      "source_duration_seconds": 0.24421679999795742,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 179,
+      "source": "raw/000179.png",
+      "raw": "raw/000179.png",
+      "elapsed_seconds": 43.12243479999597,
+      "source_duration_seconds": 0.23313980000239098,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 180,
+      "source": "raw/000180.png",
+      "raw": "raw/000180.png",
+      "elapsed_seconds": 43.35557459999836,
+      "source_duration_seconds": 0.2702075999986846,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 181,
+      "source": "raw/000181.png",
+      "raw": "raw/000181.png",
+      "elapsed_seconds": 43.62578219999705,
+      "source_duration_seconds": 0.34882170000491897,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 182,
+      "source": "raw/000182.png",
+      "raw": "raw/000182.png",
+      "elapsed_seconds": 43.974603900001966,
+      "source_duration_seconds": 0.36916099999507423,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 183,
+      "source": "raw/000183.png",
+      "raw": "raw/000183.png",
+      "elapsed_seconds": 44.34376489999704,
+      "source_duration_seconds": 0.31452700000227196,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 184,
+      "source": "raw/000184.png",
+      "raw": "raw/000184.png",
+      "elapsed_seconds": 44.65829189999931,
+      "source_duration_seconds": 0.32156279999617254,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 185,
+      "source": "raw/000185.png",
+      "raw": "raw/000185.png",
+      "elapsed_seconds": 44.979854699995485,
+      "source_duration_seconds": 0.3233223999995971,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 186,
+      "source": "raw/000186.png",
+      "raw": "raw/000186.png",
+      "elapsed_seconds": 45.30317709999508,
+      "source_duration_seconds": 0.36677400000189664,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 187,
+      "source": "raw/000187.png",
+      "raw": "raw/000187.png",
+      "elapsed_seconds": 45.66995109999698,
+      "source_duration_seconds": 0.35079509999923175,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 188,
+      "source": "raw/000188.png",
+      "raw": "raw/000188.png",
+      "elapsed_seconds": 46.02074619999621,
+      "source_duration_seconds": 0.3368982000029064,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 189,
+      "source": "raw/000189.png",
+      "raw": "raw/000189.png",
+      "elapsed_seconds": 46.35764439999912,
+      "source_duration_seconds": 0.3416729000018677,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 190,
+      "source": "raw/000190.png",
+      "raw": "raw/000190.png",
+      "elapsed_seconds": 46.699317300000985,
+      "source_duration_seconds": 0.3296578999943449,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 191,
+      "source": "raw/000191.png",
+      "raw": "raw/000191.png",
+      "elapsed_seconds": 47.02897519999533,
+      "source_duration_seconds": 0.32144960000005085,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 192,
+      "source": "raw/000192.png",
+      "raw": "raw/000192.png",
+      "elapsed_seconds": 47.35042479999538,
+      "source_duration_seconds": 0.34607320000213804,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 193,
+      "source": "raw/000193.png",
+      "raw": "raw/000193.png",
+      "elapsed_seconds": 47.69649799999752,
+      "source_duration_seconds": 0.30599339999753283,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 194,
+      "source": "raw/000194.png",
+      "raw": "raw/000194.png",
+      "elapsed_seconds": 48.00249139999505,
+      "source_duration_seconds": 0.32733189999999013,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 195,
+      "source": "raw/000195.png",
+      "raw": "raw/000195.png",
+      "elapsed_seconds": 48.32982329999504,
+      "source_duration_seconds": 0.25901160000648815,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 220,
+      "source": "raw/000220.png",
+      "raw": "raw/000220.png",
+      "elapsed_seconds": 52.60447240000212,
+      "source_duration_seconds": 0.2030626999985543,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 221,
+      "source": "raw/000221.png",
+      "raw": "raw/000221.png",
+      "elapsed_seconds": 52.80753510000068,
+      "source_duration_seconds": 0.20227750000049127,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 222,
+      "source": "raw/000222.png",
+      "raw": "raw/000222.png",
+      "elapsed_seconds": 53.00981260000117,
+      "source_duration_seconds": 0.33434099999431055,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 223,
+      "source": "raw/000223.png",
+      "raw": "raw/000223.png",
+      "elapsed_seconds": 53.34415359999548,
+      "source_duration_seconds": 0.3292503000047873,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 224,
+      "source": "raw/000224.png",
+      "raw": "raw/000224.png",
+      "elapsed_seconds": 53.67340390000027,
+      "source_duration_seconds": 0.3145498999947449,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 225,
+      "source": "raw/000225.png",
+      "raw": "raw/000225.png",
+      "elapsed_seconds": 53.98795379999501,
+      "source_duration_seconds": 0.34050930000375956,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 226,
+      "source": "raw/000226.png",
+      "raw": "raw/000226.png",
+      "elapsed_seconds": 54.32846309999877,
+      "source_duration_seconds": 0.2876918999972986,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 227,
+      "source": "raw/000227.png",
+      "raw": "raw/000227.png",
+      "elapsed_seconds": 54.61615499999607,
+      "source_duration_seconds": 0.4087366000021575,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 228,
+      "source": "raw/000228.png",
+      "raw": "raw/000228.png",
+      "elapsed_seconds": 55.02489159999823,
+      "source_duration_seconds": 0.34745359999942593,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 229,
+      "source": "raw/000229.png",
+      "raw": "raw/000229.png",
+      "elapsed_seconds": 55.37234519999765,
+      "source_duration_seconds": 0.3323156000042218,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 230,
+      "source": "raw/000230.png",
+      "raw": "raw/000230.png",
+      "elapsed_seconds": 55.704660800001875,
+      "source_duration_seconds": 0.33893459999671904,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 231,
+      "source": "raw/000231.png",
+      "raw": "raw/000231.png",
+      "elapsed_seconds": 56.043595399998594,
+      "source_duration_seconds": 0.30170779999752995,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 232,
+      "source": "raw/000232.png",
+      "raw": "raw/000232.png",
+      "elapsed_seconds": 56.345303199996124,
+      "source_duration_seconds": 0.3392528000040329,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 233,
+      "source": "raw/000233.png",
+      "raw": "raw/000233.png",
+      "elapsed_seconds": 56.68455600000016,
+      "source_duration_seconds": 0.3371132999964175,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 234,
+      "source": "raw/000234.png",
+      "raw": "raw/000234.png",
+      "elapsed_seconds": 57.021669299996574,
+      "source_duration_seconds": 0.33478219999960857,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 235,
+      "source": "raw/000235.png",
+      "raw": "raw/000235.png",
+      "elapsed_seconds": 57.35645149999618,
+      "source_duration_seconds": 0.3335337000025902,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 236,
+      "source": "raw/000236.png",
+      "raw": "raw/000236.png",
+      "elapsed_seconds": 57.68998519999877,
+      "source_duration_seconds": 0.33808069999940926,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 237,
+      "source": "raw/000237.png",
+      "raw": "raw/000237.png",
+      "elapsed_seconds": 58.02806589999818,
+      "source_duration_seconds": 0.1701838000008138,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 262,
+      "source": "raw/000262.png",
+      "raw": "raw/000262.png",
+      "elapsed_seconds": 62.19841639999504,
+      "source_duration_seconds": 0.17586300000402844,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 263,
+      "source": "raw/000263.png",
+      "raw": "raw/000263.png",
+      "elapsed_seconds": 62.37427939999907,
+      "source_duration_seconds": 0.2286443999983021,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 264,
+      "source": "raw/000264.png",
+      "raw": "raw/000264.png",
+      "elapsed_seconds": 62.60292379999737,
+      "source_duration_seconds": 0.31857270000182325,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 265,
+      "source": "raw/000265.png",
+      "raw": "raw/000265.png",
+      "elapsed_seconds": 62.92149649999919,
+      "source_duration_seconds": 0.3045187999960035,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 266,
+      "source": "raw/000266.png",
+      "raw": "raw/000266.png",
+      "elapsed_seconds": 63.2260152999952,
+      "source_duration_seconds": 0.3075122000009287,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 267,
+      "source": "raw/000267.png",
+      "raw": "raw/000267.png",
+      "elapsed_seconds": 63.533527499996126,
+      "source_duration_seconds": 0.3083097000053385,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 268,
+      "source": "raw/000268.png",
+      "raw": "raw/000268.png",
+      "elapsed_seconds": 63.841837200001464,
+      "source_duration_seconds": 0.3109841999976197,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 269,
+      "source": "raw/000269.png",
+      "raw": "raw/000269.png",
+      "elapsed_seconds": 64.15282139999908,
+      "source_duration_seconds": 0.37030139999842504,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 270,
+      "source": "raw/000270.png",
+      "raw": "raw/000270.png",
+      "elapsed_seconds": 64.52312279999751,
+      "source_duration_seconds": 0.3071639000045252,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 271,
+      "source": "raw/000271.png",
+      "raw": "raw/000271.png",
+      "elapsed_seconds": 64.83028670000203,
+      "source_duration_seconds": 0.2961563999997452,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 272,
+      "source": "raw/000272.png",
+      "raw": "raw/000272.png",
+      "elapsed_seconds": 65.12644310000178,
+      "source_duration_seconds": 0.3009241999970982,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 273,
+      "source": "raw/000273.png",
+      "raw": "raw/000273.png",
+      "elapsed_seconds": 65.42736729999888,
+      "source_duration_seconds": 0.3221157000007224,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 274,
+      "source": "raw/000274.png",
+      "raw": "raw/000274.png",
+      "elapsed_seconds": 65.7494829999996,
+      "source_duration_seconds": 0.3046780000004219,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 275,
+      "source": "raw/000275.png",
+      "raw": "raw/000275.png",
+      "elapsed_seconds": 66.05416100000002,
+      "source_duration_seconds": 0.32377209999685874,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 276,
+      "source": "raw/000276.png",
+      "raw": "raw/000276.png",
+      "elapsed_seconds": 66.37793309999688,
+      "source_duration_seconds": 0.30332360000465997,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 277,
+      "source": "raw/000277.png",
+      "raw": "raw/000277.png",
+      "elapsed_seconds": 66.68125670000154,
+      "source_duration_seconds": 0.29470459999720333,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 278,
+      "source": "raw/000278.png",
+      "raw": "raw/000278.png",
+      "elapsed_seconds": 66.97596129999874,
+      "source_duration_seconds": 0.2948460999978124,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 279,
+      "source": "raw/000279.png",
+      "raw": "raw/000279.png",
+      "elapsed_seconds": 67.27080739999656,
+      "source_duration_seconds": 0.3050150000053691,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 280,
+      "source": "raw/000280.png",
+      "raw": "raw/000280.png",
+      "elapsed_seconds": 67.57582240000193,
+      "source_duration_seconds": 0.17094240000005811,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 310,
+      "source": "raw/000310.png",
+      "raw": "raw/000310.png",
+      "elapsed_seconds": 72.59637919999659,
+      "source_duration_seconds": 0.1805852000034065,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 311,
+      "source": "raw/000311.png",
+      "raw": "raw/000311.png",
+      "elapsed_seconds": 72.7769644,
+      "source_duration_seconds": 0.2531724000000395,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 312,
+      "source": "raw/000312.png",
+      "raw": "raw/000312.png",
+      "elapsed_seconds": 73.03013680000004,
+      "source_duration_seconds": 0.2910163999986253,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 313,
+      "source": "raw/000313.png",
+      "raw": "raw/000313.png",
+      "elapsed_seconds": 73.32115319999866,
+      "source_duration_seconds": 0.32154979999904754,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 314,
+      "source": "raw/000314.png",
+      "raw": "raw/000314.png",
+      "elapsed_seconds": 73.64270299999771,
+      "source_duration_seconds": 0.3149706999975024,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 315,
+      "source": "raw/000315.png",
+      "raw": "raw/000315.png",
+      "elapsed_seconds": 73.95767369999521,
+      "source_duration_seconds": 0.3207120000006398,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 316,
+      "source": "raw/000316.png",
+      "raw": "raw/000316.png",
+      "elapsed_seconds": 74.27838569999585,
+      "source_duration_seconds": 0.3627716000046348,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 317,
+      "source": "raw/000317.png",
+      "raw": "raw/000317.png",
+      "elapsed_seconds": 74.64115730000049,
+      "source_duration_seconds": 0.32561839999834774,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 318,
+      "source": "raw/000318.png",
+      "raw": "raw/000318.png",
+      "elapsed_seconds": 74.96677569999883,
+      "source_duration_seconds": 0.34476659999927506,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 319,
+      "source": "raw/000319.png",
+      "raw": "raw/000319.png",
+      "elapsed_seconds": 75.31154229999811,
+      "source_duration_seconds": 0.29382430000259774,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 320,
+      "source": "raw/000320.png",
+      "raw": "raw/000320.png",
+      "elapsed_seconds": 75.6053666000007,
+      "source_duration_seconds": 0.28929860000062035,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 321,
+      "source": "raw/000321.png",
+      "raw": "raw/000321.png",
+      "elapsed_seconds": 75.89466520000133,
+      "source_duration_seconds": 0.31104819999745814,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 322,
+      "source": "raw/000322.png",
+      "raw": "raw/000322.png",
+      "elapsed_seconds": 76.20571339999879,
+      "source_duration_seconds": 0.2925076000028639,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 323,
+      "source": "raw/000323.png",
+      "raw": "raw/000323.png",
+      "elapsed_seconds": 76.49822100000165,
+      "source_duration_seconds": 0.2947125999999116,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 324,
+      "source": "raw/000324.png",
+      "raw": "raw/000324.png",
+      "elapsed_seconds": 76.79293360000156,
+      "source_duration_seconds": 0.3068232000005082,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 325,
+      "source": "raw/000325.png",
+      "raw": "raw/000325.png",
+      "elapsed_seconds": 77.09975680000207,
+      "source_duration_seconds": 0.2974772999950801,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 326,
+      "source": "raw/000326.png",
+      "raw": "raw/000326.png",
+      "elapsed_seconds": 77.39723409999715,
+      "source_duration_seconds": 0.301227399999334,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 327,
+      "source": "raw/000327.png",
+      "raw": "raw/000327.png",
+      "elapsed_seconds": 77.69846149999648,
+      "source_duration_seconds": 0.2820674000031431,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 328,
+      "source": "raw/000328.png",
+      "raw": "raw/000328.png",
+      "elapsed_seconds": 77.98052889999963,
+      "source_duration_seconds": 0.1791635999979917,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 353,
+      "source": "raw/000353.png",
+      "raw": "raw/000353.png",
+      "elapsed_seconds": 82.15598150000005,
+      "source_duration_seconds": 0.19961419999890495,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 354,
+      "source": "raw/000354.png",
+      "raw": "raw/000354.png",
+      "elapsed_seconds": 82.35559569999896,
+      "source_duration_seconds": 0.2206856999982847,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 355,
+      "source": "raw/000355.png",
+      "raw": "raw/000355.png",
+      "elapsed_seconds": 82.57628139999724,
+      "source_duration_seconds": 0.31881280000379775,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 356,
+      "source": "raw/000356.png",
+      "raw": "raw/000356.png",
+      "elapsed_seconds": 82.89509420000104,
+      "source_duration_seconds": 0.33462779999535996,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 357,
+      "source": "raw/000357.png",
+      "raw": "raw/000357.png",
+      "elapsed_seconds": 83.2297219999964,
+      "source_duration_seconds": 0.30394150000211084,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 358,
+      "source": "raw/000358.png",
+      "raw": "raw/000358.png",
+      "elapsed_seconds": 83.53366349999851,
+      "source_duration_seconds": 0.3260578999979771,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 359,
+      "source": "raw/000359.png",
+      "raw": "raw/000359.png",
+      "elapsed_seconds": 83.85972139999649,
+      "source_duration_seconds": 0.3110690000030445,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 360,
+      "source": "raw/000360.png",
+      "raw": "raw/000360.png",
+      "elapsed_seconds": 84.17079039999953,
+      "source_duration_seconds": 0.3624989000018104,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 361,
+      "source": "raw/000361.png",
+      "raw": "raw/000361.png",
+      "elapsed_seconds": 84.53328930000134,
+      "source_duration_seconds": 0.29927909999969415,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 362,
+      "source": "raw/000362.png",
+      "raw": "raw/000362.png",
+      "elapsed_seconds": 84.83256840000104,
+      "source_duration_seconds": 0.3157317000004696,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 363,
+      "source": "raw/000363.png",
+      "raw": "raw/000363.png",
+      "elapsed_seconds": 85.1483001000015,
+      "source_duration_seconds": 0.3201495999965118,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 364,
+      "source": "raw/000364.png",
+      "raw": "raw/000364.png",
+      "elapsed_seconds": 85.46844969999802,
+      "source_duration_seconds": 0.3154099000021233,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 365,
+      "source": "raw/000365.png",
+      "raw": "raw/000365.png",
+      "elapsed_seconds": 85.78385960000014,
+      "source_duration_seconds": 0.31828200000018114,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 366,
+      "source": "raw/000366.png",
+      "raw": "raw/000366.png",
+      "elapsed_seconds": 86.10214160000032,
+      "source_duration_seconds": 0.2870952999946894,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 367,
+      "source": "raw/000367.png",
+      "raw": "raw/000367.png",
+      "elapsed_seconds": 86.38923689999501,
+      "source_duration_seconds": 0.325803800005815,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 368,
+      "source": "raw/000368.png",
+      "raw": "raw/000368.png",
+      "elapsed_seconds": 86.71504070000083,
+      "source_duration_seconds": 0.3073750999974436,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 369,
+      "source": "raw/000369.png",
+      "raw": "raw/000369.png",
+      "elapsed_seconds": 87.02241579999827,
+      "source_duration_seconds": 0.29845729999942705,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 370,
+      "source": "raw/000370.png",
+      "raw": "raw/000370.png",
+      "elapsed_seconds": 87.3208730999977,
+      "source_duration_seconds": 0.24708749999990687,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 395,
+      "source": "raw/000395.png",
+      "raw": "raw/000395.png",
+      "elapsed_seconds": 91.57560849999572,
+      "source_duration_seconds": 0.18319200000405544,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 396,
+      "source": "raw/000396.png",
+      "raw": "raw/000396.png",
+      "elapsed_seconds": 91.75880049999978,
+      "source_duration_seconds": 0.22178639999765437,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 397,
+      "source": "raw/000397.png",
+      "raw": "raw/000397.png",
+      "elapsed_seconds": 91.98058689999743,
+      "source_duration_seconds": 0.3363826999993762,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 398,
+      "source": "raw/000398.png",
+      "raw": "raw/000398.png",
+      "elapsed_seconds": 92.31696959999681,
+      "source_duration_seconds": 0.3048551000028965,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 399,
+      "source": "raw/000399.png",
+      "raw": "raw/000399.png",
+      "elapsed_seconds": 92.6218246999997,
+      "source_duration_seconds": 0.30323069999576546,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 400,
+      "source": "raw/000400.png",
+      "raw": "raw/000400.png",
+      "elapsed_seconds": 92.92505539999547,
+      "source_duration_seconds": 0.3176048000023002,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 401,
+      "source": "raw/000401.png",
+      "raw": "raw/000401.png",
+      "elapsed_seconds": 93.24266019999777,
+      "source_duration_seconds": 0.31122709999908693,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 402,
+      "source": "raw/000402.png",
+      "raw": "raw/000402.png",
+      "elapsed_seconds": 93.55388729999686,
+      "source_duration_seconds": 0.3411214000007021,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 403,
+      "source": "raw/000403.png",
+      "raw": "raw/000403.png",
+      "elapsed_seconds": 93.89500869999756,
+      "source_duration_seconds": 0.28659350000089034,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 404,
+      "source": "raw/000404.png",
+      "raw": "raw/000404.png",
+      "elapsed_seconds": 94.18160219999845,
+      "source_duration_seconds": 0.3052310999992187,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 405,
+      "source": "raw/000405.png",
+      "raw": "raw/000405.png",
+      "elapsed_seconds": 94.48683329999767,
+      "source_duration_seconds": 0.32486639999842737,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 406,
+      "source": "raw/000406.png",
+      "raw": "raw/000406.png",
+      "elapsed_seconds": 94.8116996999961,
+      "source_duration_seconds": 0.2947980000026291,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 407,
+      "source": "raw/000407.png",
+      "raw": "raw/000407.png",
+      "elapsed_seconds": 95.10649769999873,
+      "source_duration_seconds": 0.29330189999745926,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 408,
+      "source": "raw/000408.png",
+      "raw": "raw/000408.png",
+      "elapsed_seconds": 95.39979959999619,
+      "source_duration_seconds": 0.3068499000000884,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 409,
+      "source": "raw/000409.png",
+      "raw": "raw/000409.png",
+      "elapsed_seconds": 95.70664949999627,
+      "source_duration_seconds": 0.32682390000263695,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 410,
+      "source": "raw/000410.png",
+      "raw": "raw/000410.png",
+      "elapsed_seconds": 96.03347339999891,
+      "source_duration_seconds": 0.279371299999184,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 411,
+      "source": "raw/000411.png",
+      "raw": "raw/000411.png",
+      "elapsed_seconds": 96.3128446999981,
+      "source_duration_seconds": 0.29709530000400264,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 412,
+      "source": "raw/000412.png",
+      "raw": "raw/000412.png",
+      "elapsed_seconds": 96.6099400000021,
+      "source_duration_seconds": 0.3432383999970625,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 413,
+      "source": "raw/000413.png",
+      "raw": "raw/000413.png",
+      "elapsed_seconds": 96.95317839999916,
+      "source_duration_seconds": 0.1774167999974452,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 438,
+      "source": "raw/000438.png",
+      "raw": "raw/000438.png",
+      "elapsed_seconds": 101.12149240000144,
+      "source_duration_seconds": 0.22665050000068732,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 439,
+      "source": "raw/000439.png",
+      "raw": "raw/000439.png",
+      "elapsed_seconds": 101.34814290000213,
+      "source_duration_seconds": 0.2559428999957163,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 440,
+      "source": "raw/000440.png",
+      "raw": "raw/000440.png",
+      "elapsed_seconds": 101.60408579999785,
+      "source_duration_seconds": 0.35195370000292314,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 441,
+      "source": "raw/000441.png",
+      "raw": "raw/000441.png",
+      "elapsed_seconds": 101.95603950000077,
+      "source_duration_seconds": 0.3430949999965378,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 442,
+      "source": "raw/000442.png",
+      "raw": "raw/000442.png",
+      "elapsed_seconds": 102.29913449999731,
+      "source_duration_seconds": 0.315902800000913,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 443,
+      "source": "raw/000443.png",
+      "raw": "raw/000443.png",
+      "elapsed_seconds": 102.61503729999822,
+      "source_duration_seconds": 0.3651419000016176,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 444,
+      "source": "raw/000444.png",
+      "raw": "raw/000444.png",
+      "elapsed_seconds": 102.98017919999984,
+      "source_duration_seconds": 0.3595941999956267,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 445,
+      "source": "raw/000445.png",
+      "raw": "raw/000445.png",
+      "elapsed_seconds": 103.33977339999547,
+      "source_duration_seconds": 0.37503310000465717,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 446,
+      "source": "raw/000446.png",
+      "raw": "raw/000446.png",
+      "elapsed_seconds": 103.71480650000012,
+      "source_duration_seconds": 0.32654529999854276,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 447,
+      "source": "raw/000447.png",
+      "raw": "raw/000447.png",
+      "elapsed_seconds": 104.04135179999867,
+      "source_duration_seconds": 0.29096479999861913,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 448,
+      "source": "raw/000448.png",
+      "raw": "raw/000448.png",
+      "elapsed_seconds": 104.33231659999728,
+      "source_duration_seconds": 0.31772970000019995,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 449,
+      "source": "raw/000449.png",
+      "raw": "raw/000449.png",
+      "elapsed_seconds": 104.65004629999748,
+      "source_duration_seconds": 0.32460330000321846,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 450,
+      "source": "raw/000450.png",
+      "raw": "raw/000450.png",
+      "elapsed_seconds": 104.9746496000007,
+      "source_duration_seconds": 0.31841939999867463,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 451,
+      "source": "raw/000451.png",
+      "raw": "raw/000451.png",
+      "elapsed_seconds": 105.29306899999938,
+      "source_duration_seconds": 0.32958269999653567,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 452,
+      "source": "raw/000452.png",
+      "raw": "raw/000452.png",
+      "elapsed_seconds": 105.62265169999591,
+      "source_duration_seconds": 0.33003029999963474,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 453,
+      "source": "raw/000453.png",
+      "raw": "raw/000453.png",
+      "elapsed_seconds": 105.95268199999555,
+      "source_duration_seconds": 0.3561074000026565,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 454,
+      "source": "raw/000454.png",
+      "raw": "raw/000454.png",
+      "elapsed_seconds": 106.3087893999982,
+      "source_duration_seconds": 0.30689169999823207,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 479,
+      "source": "raw/000479.png",
+      "raw": "raw/000479.png",
+      "elapsed_seconds": 110.62397219999548,
+      "source_duration_seconds": 0.21553510000376264,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 480,
+      "source": "raw/000480.png",
+      "raw": "raw/000480.png",
+      "elapsed_seconds": 110.83950729999924,
+      "source_duration_seconds": 0.2636257999984082,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 481,
+      "source": "raw/000481.png",
+      "raw": "raw/000481.png",
+      "elapsed_seconds": 111.10313309999765,
+      "source_duration_seconds": 0.3805164000004879,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 482,
+      "source": "raw/000482.png",
+      "raw": "raw/000482.png",
+      "elapsed_seconds": 111.48364949999814,
+      "source_duration_seconds": 0.42279579999740236,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 483,
+      "source": "raw/000483.png",
+      "raw": "raw/000483.png",
+      "elapsed_seconds": 111.90644529999554,
+      "source_duration_seconds": 0.35246360000019195,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 484,
+      "source": "raw/000484.png",
+      "raw": "raw/000484.png",
+      "elapsed_seconds": 112.25890889999573,
+      "source_duration_seconds": 0.36828740000055404,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 485,
+      "source": "raw/000485.png",
+      "raw": "raw/000485.png",
+      "elapsed_seconds": 112.62719629999629,
+      "source_duration_seconds": 0.3641293000036967,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 486,
+      "source": "raw/000486.png",
+      "raw": "raw/000486.png",
+      "elapsed_seconds": 112.99132559999998,
+      "source_duration_seconds": 0.29198750000068685,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 487,
+      "source": "raw/000487.png",
+      "raw": "raw/000487.png",
+      "elapsed_seconds": 113.28331310000067,
+      "source_duration_seconds": 0.3639024000003701,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 488,
+      "source": "raw/000488.png",
+      "raw": "raw/000488.png",
+      "elapsed_seconds": 113.64721550000104,
+      "source_duration_seconds": 0.3607068999990588,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 489,
+      "source": "raw/000489.png",
+      "raw": "raw/000489.png",
+      "elapsed_seconds": 114.0079224000001,
+      "source_duration_seconds": 0.358564900001511,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 490,
+      "source": "raw/000490.png",
+      "raw": "raw/000490.png",
+      "elapsed_seconds": 114.36648730000161,
+      "source_duration_seconds": 0.3805878999992274,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 491,
+      "source": "raw/000491.png",
+      "raw": "raw/000491.png",
+      "elapsed_seconds": 114.74707520000084,
+      "source_duration_seconds": 0.30182570000033593,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 492,
+      "source": "raw/000492.png",
+      "raw": "raw/000492.png",
+      "elapsed_seconds": 115.04890090000117,
+      "source_duration_seconds": 0.3154396999962046,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 493,
+      "source": "raw/000493.png",
+      "raw": "raw/000493.png",
+      "elapsed_seconds": 115.36434059999738,
+      "source_duration_seconds": 0.3191091000044253,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 494,
+      "source": "raw/000494.png",
+      "raw": "raw/000494.png",
+      "elapsed_seconds": 115.6834497000018,
+      "source_duration_seconds": 0.3105809999979101,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 495,
+      "source": "raw/000495.png",
+      "raw": "raw/000495.png",
+      "elapsed_seconds": 115.99403069999971,
+      "source_duration_seconds": 0.221045199999935,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 521,
+      "source": "raw/000521.png",
+      "raw": "raw/000521.png",
+      "elapsed_seconds": 120.3946519999954,
+      "source_duration_seconds": 0.2087866000001668,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 522,
+      "source": "raw/000522.png",
+      "raw": "raw/000522.png",
+      "elapsed_seconds": 120.60343859999557,
+      "source_duration_seconds": 0.322647600005439,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 523,
+      "source": "raw/000523.png",
+      "raw": "raw/000523.png",
+      "elapsed_seconds": 120.92608620000101,
+      "source_duration_seconds": 0.33698680000088643,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 524,
+      "source": "raw/000524.png",
+      "raw": "raw/000524.png",
+      "elapsed_seconds": 121.2630730000019,
+      "source_duration_seconds": 0.404167900000175,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 525,
+      "source": "raw/000525.png",
+      "raw": "raw/000525.png",
+      "elapsed_seconds": 121.66724090000207,
+      "source_duration_seconds": 0.43572199999471195,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 526,
+      "source": "raw/000526.png",
+      "raw": "raw/000526.png",
+      "elapsed_seconds": 122.10296289999678,
+      "source_duration_seconds": 0.3390383000005386,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 527,
+      "source": "raw/000527.png",
+      "raw": "raw/000527.png",
+      "elapsed_seconds": 122.44200119999732,
+      "source_duration_seconds": 0.36959419999766396,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 528,
+      "source": "raw/000528.png",
+      "raw": "raw/000528.png",
+      "elapsed_seconds": 122.81159539999499,
+      "source_duration_seconds": 0.35690460000478197,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 529,
+      "source": "raw/000529.png",
+      "raw": "raw/000529.png",
+      "elapsed_seconds": 123.16849999999977,
+      "source_duration_seconds": 0.3277077000020654,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 530,
+      "source": "raw/000530.png",
+      "raw": "raw/000530.png",
+      "elapsed_seconds": 123.49620770000183,
+      "source_duration_seconds": 0.3178265999958967,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 531,
+      "source": "raw/000531.png",
+      "raw": "raw/000531.png",
+      "elapsed_seconds": 123.81403429999773,
+      "source_duration_seconds": 0.25309460000426043,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 532,
+      "source": "raw/000532.png",
+      "raw": "raw/000532.png",
+      "elapsed_seconds": 124.06712890000199,
+      "source_duration_seconds": 0.3027959999963059,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 533,
+      "source": "raw/000533.png",
+      "raw": "raw/000533.png",
+      "elapsed_seconds": 124.3699248999983,
+      "source_duration_seconds": 0.3648412000038661,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 534,
+      "source": "raw/000534.png",
+      "raw": "raw/000534.png",
+      "elapsed_seconds": 124.73476610000216,
+      "source_duration_seconds": 0.3513027999943006,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 535,
+      "source": "raw/000535.png",
+      "raw": "raw/000535.png",
+      "elapsed_seconds": 125.08606889999646,
+      "source_duration_seconds": 0.3147434000056819,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 536,
+      "source": "raw/000536.png",
+      "raw": "raw/000536.png",
+      "elapsed_seconds": 125.40081230000214,
+      "source_duration_seconds": 0.3579825999986497,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 537,
+      "source": "raw/000537.png",
+      "raw": "raw/000537.png",
+      "elapsed_seconds": 125.7587949000008,
+      "source_duration_seconds": 0.17404839999653632,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 563,
+      "source": "raw/000563.png",
+      "raw": "raw/000563.png",
+      "elapsed_seconds": 130.10577499999636,
+      "source_duration_seconds": 0.19736270000430522,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 564,
+      "source": "raw/000564.png",
+      "raw": "raw/000564.png",
+      "elapsed_seconds": 130.30313770000066,
+      "source_duration_seconds": 0.2407378999996581,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 565,
+      "source": "raw/000565.png",
+      "raw": "raw/000565.png",
+      "elapsed_seconds": 130.54387560000032,
+      "source_duration_seconds": 0.3729782000009436,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 566,
+      "source": "raw/000566.png",
+      "raw": "raw/000566.png",
+      "elapsed_seconds": 130.91685380000126,
+      "source_duration_seconds": 0.343348700000206,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 567,
+      "source": "raw/000567.png",
+      "raw": "raw/000567.png",
+      "elapsed_seconds": 131.26020250000147,
+      "source_duration_seconds": 0.3715225999985705,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 568,
+      "source": "raw/000568.png",
+      "raw": "raw/000568.png",
+      "elapsed_seconds": 131.63172510000004,
+      "source_duration_seconds": 0.3441763000009814,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 569,
+      "source": "raw/000569.png",
+      "raw": "raw/000569.png",
+      "elapsed_seconds": 131.97590140000102,
+      "source_duration_seconds": 0.3547051999994437,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 570,
+      "source": "raw/000570.png",
+      "raw": "raw/000570.png",
+      "elapsed_seconds": 132.33060660000046,
+      "source_duration_seconds": 0.3661066999993636,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 571,
+      "source": "raw/000571.png",
+      "raw": "raw/000571.png",
+      "elapsed_seconds": 132.69671329999983,
+      "source_duration_seconds": 0.3525145000021439,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 572,
+      "source": "raw/000572.png",
+      "raw": "raw/000572.png",
+      "elapsed_seconds": 133.04922780000197,
+      "source_duration_seconds": 0.3297644999984186,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 573,
+      "source": "raw/000573.png",
+      "raw": "raw/000573.png",
+      "elapsed_seconds": 133.3789923000004,
+      "source_duration_seconds": 0.4301192999992054,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 574,
+      "source": "raw/000574.png",
+      "raw": "raw/000574.png",
+      "elapsed_seconds": 133.8091115999996,
+      "source_duration_seconds": 0.36737349999748403,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 575,
+      "source": "raw/000575.png",
+      "raw": "raw/000575.png",
+      "elapsed_seconds": 134.17648509999708,
+      "source_duration_seconds": 0.3327270000008866,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 576,
+      "source": "raw/000576.png",
+      "raw": "raw/000576.png",
+      "elapsed_seconds": 134.50921209999797,
+      "source_duration_seconds": 0.36841809999896213,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 577,
+      "source": "raw/000577.png",
+      "raw": "raw/000577.png",
+      "elapsed_seconds": 134.87763019999693,
+      "source_duration_seconds": 0.33302040000126,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 578,
+      "source": "raw/000578.png",
+      "raw": "raw/000578.png",
+      "elapsed_seconds": 135.2106505999982,
+      "source_duration_seconds": 0.31715280000207713,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 579,
+      "source": "raw/000579.png",
+      "raw": "raw/000579.png",
+      "elapsed_seconds": 135.52780340000027,
+      "source_duration_seconds": 0.18912949999503326,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 604,
+      "source": "raw/000604.png",
+      "raw": "raw/000604.png",
+      "elapsed_seconds": 139.72915020000073,
+      "source_duration_seconds": 0.19761849999486003,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 605,
+      "source": "raw/000605.png",
+      "raw": "raw/000605.png",
+      "elapsed_seconds": 139.9267686999956,
+      "source_duration_seconds": 0.2904110000017681,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 606,
+      "source": "raw/000606.png",
+      "raw": "raw/000606.png",
+      "elapsed_seconds": 140.21717969999736,
+      "source_duration_seconds": 0.3262807999999495,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 607,
+      "source": "raw/000607.png",
+      "raw": "raw/000607.png",
+      "elapsed_seconds": 140.5434604999973,
+      "source_duration_seconds": 0.34274290000030305,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 608,
+      "source": "raw/000608.png",
+      "raw": "raw/000608.png",
+      "elapsed_seconds": 140.8862033999976,
+      "source_duration_seconds": 0.3480219999983092,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 609,
+      "source": "raw/000609.png",
+      "raw": "raw/000609.png",
+      "elapsed_seconds": 141.23422539999592,
+      "source_duration_seconds": 0.32991490000131307,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 610,
+      "source": "raw/000610.png",
+      "raw": "raw/000610.png",
+      "elapsed_seconds": 141.56414029999723,
+      "source_duration_seconds": 0.3590829000022495,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 611,
+      "source": "raw/000611.png",
+      "raw": "raw/000611.png",
+      "elapsed_seconds": 141.92322319999948,
+      "source_duration_seconds": 0.3694206000000122,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 612,
+      "source": "raw/000612.png",
+      "raw": "raw/000612.png",
+      "elapsed_seconds": 142.2926437999995,
+      "source_duration_seconds": 0.3332975000012084,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 613,
+      "source": "raw/000613.png",
+      "raw": "raw/000613.png",
+      "elapsed_seconds": 142.6259413000007,
+      "source_duration_seconds": 0.356387599997106,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 614,
+      "source": "raw/000614.png",
+      "raw": "raw/000614.png",
+      "elapsed_seconds": 142.9823288999978,
+      "source_duration_seconds": 0.35480660000030184,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 615,
+      "source": "raw/000615.png",
+      "raw": "raw/000615.png",
+      "elapsed_seconds": 143.3371354999981,
+      "source_duration_seconds": 0.32259350000094855,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 616,
+      "source": "raw/000616.png",
+      "raw": "raw/000616.png",
+      "elapsed_seconds": 143.65972899999906,
+      "source_duration_seconds": 0.34874139999737963,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 617,
+      "source": "raw/000617.png",
+      "raw": "raw/000617.png",
+      "elapsed_seconds": 144.00847039999644,
+      "source_duration_seconds": 0.3455815999986953,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 618,
+      "source": "raw/000618.png",
+      "raw": "raw/000618.png",
+      "elapsed_seconds": 144.35405199999514,
+      "source_duration_seconds": 0.3154664000030607,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 619,
+      "source": "raw/000619.png",
+      "raw": "raw/000619.png",
+      "elapsed_seconds": 144.6695183999982,
+      "source_duration_seconds": 0.40679850000014994,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 620,
+      "source": "raw/000620.png",
+      "raw": "raw/000620.png",
+      "elapsed_seconds": 145.07631689999835,
+      "source_duration_seconds": 0.17365930000232765,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 645,
+      "source": "raw/000645.png",
+      "raw": "raw/000645.png",
+      "elapsed_seconds": 149.25240639999538,
+      "source_duration_seconds": 0.21797140000126092,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 646,
+      "source": "raw/000646.png",
+      "raw": "raw/000646.png",
+      "elapsed_seconds": 149.47037779999664,
+      "source_duration_seconds": 0.24049979999836069,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 647,
+      "source": "raw/000647.png",
+      "raw": "raw/000647.png",
+      "elapsed_seconds": 149.710877599995,
+      "source_duration_seconds": 0.3812878000026103,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 648,
+      "source": "raw/000648.png",
+      "raw": "raw/000648.png",
+      "elapsed_seconds": 150.0921653999976,
+      "source_duration_seconds": 0.35199419999844395,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 649,
+      "source": "raw/000649.png",
+      "raw": "raw/000649.png",
+      "elapsed_seconds": 150.44415959999606,
+      "source_duration_seconds": 0.35009540000464767,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 650,
+      "source": "raw/000650.png",
+      "raw": "raw/000650.png",
+      "elapsed_seconds": 150.7942550000007,
+      "source_duration_seconds": 0.35911119999946095,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 651,
+      "source": "raw/000651.png",
+      "raw": "raw/000651.png",
+      "elapsed_seconds": 151.15336620000016,
+      "source_duration_seconds": 0.33128719999513123,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 652,
+      "source": "raw/000652.png",
+      "raw": "raw/000652.png",
+      "elapsed_seconds": 151.4846533999953,
+      "source_duration_seconds": 0.3594141000066884,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 653,
+      "source": "raw/000653.png",
+      "raw": "raw/000653.png",
+      "elapsed_seconds": 151.84406750000198,
+      "source_duration_seconds": 0.36508019999746466,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 654,
+      "source": "raw/000654.png",
+      "raw": "raw/000654.png",
+      "elapsed_seconds": 152.20914769999945,
+      "source_duration_seconds": 0.3049996999980067,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 655,
+      "source": "raw/000655.png",
+      "raw": "raw/000655.png",
+      "elapsed_seconds": 152.51414739999746,
+      "source_duration_seconds": 0.3608587999988231,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 656,
+      "source": "raw/000656.png",
+      "raw": "raw/000656.png",
+      "elapsed_seconds": 152.87500619999628,
+      "source_duration_seconds": 0.3659198000023025,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 657,
+      "source": "raw/000657.png",
+      "raw": "raw/000657.png",
+      "elapsed_seconds": 153.24092599999858,
+      "source_duration_seconds": 0.33036379999975907,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 658,
+      "source": "raw/000658.png",
+      "raw": "raw/000658.png",
+      "elapsed_seconds": 153.57128979999834,
+      "source_duration_seconds": 0.34652659999846946,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 659,
+      "source": "raw/000659.png",
+      "raw": "raw/000659.png",
+      "elapsed_seconds": 153.9178163999968,
+      "source_duration_seconds": 0.37500030000228435,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 660,
+      "source": "raw/000660.png",
+      "raw": "raw/000660.png",
+      "elapsed_seconds": 154.2928166999991,
+      "source_duration_seconds": 0.3061355999961961,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 661,
+      "source": "raw/000661.png",
+      "raw": "raw/000661.png",
+      "elapsed_seconds": 154.5989522999953,
+      "source_duration_seconds": 0.19527430000016466,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 687,
+      "source": "raw/000687.png",
+      "raw": "raw/000687.png",
+      "elapsed_seconds": 158.97471979999682,
+      "source_duration_seconds": 0.22375770000508055,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 688,
+      "source": "raw/000688.png",
+      "raw": "raw/000688.png",
+      "elapsed_seconds": 159.1984775000019,
+      "source_duration_seconds": 0.2743865999946138,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 689,
+      "source": "raw/000689.png",
+      "raw": "raw/000689.png",
+      "elapsed_seconds": 159.4728640999965,
+      "source_duration_seconds": 0.3672615000032238,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 690,
+      "source": "raw/000690.png",
+      "raw": "raw/000690.png",
+      "elapsed_seconds": 159.84012559999974,
+      "source_duration_seconds": 0.3711516999974265,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 691,
+      "source": "raw/000691.png",
+      "raw": "raw/000691.png",
+      "elapsed_seconds": 160.21127729999716,
+      "source_duration_seconds": 0.35075850000430364,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 692,
+      "source": "raw/000692.png",
+      "raw": "raw/000692.png",
+      "elapsed_seconds": 160.56203580000147,
+      "source_duration_seconds": 0.3904742999948212,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 693,
+      "source": "raw/000693.png",
+      "raw": "raw/000693.png",
+      "elapsed_seconds": 160.9525100999963,
+      "source_duration_seconds": 0.4093713000038406,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 694,
+      "source": "raw/000694.png",
+      "raw": "raw/000694.png",
+      "elapsed_seconds": 161.36188140000013,
+      "source_duration_seconds": 0.3486217999961809,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 695,
+      "source": "raw/000695.png",
+      "raw": "raw/000695.png",
+      "elapsed_seconds": 161.7105031999963,
+      "source_duration_seconds": 0.3895568000007188,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 696,
+      "source": "raw/000696.png",
+      "raw": "raw/000696.png",
+      "elapsed_seconds": 162.10005999999703,
+      "source_duration_seconds": 0.3465434000027017,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 697,
+      "source": "raw/000697.png",
+      "raw": "raw/000697.png",
+      "elapsed_seconds": 162.44660339999973,
+      "source_duration_seconds": 0.3555539000008139,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 698,
+      "source": "raw/000698.png",
+      "raw": "raw/000698.png",
+      "elapsed_seconds": 162.80215730000054,
+      "source_duration_seconds": 0.35861170000134734,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 699,
+      "source": "raw/000699.png",
+      "raw": "raw/000699.png",
+      "elapsed_seconds": 163.1607690000019,
+      "source_duration_seconds": 0.3416434999962803,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 700,
+      "source": "raw/000700.png",
+      "raw": "raw/000700.png",
+      "elapsed_seconds": 163.50241249999817,
+      "source_duration_seconds": 0.38331119999929797,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 701,
+      "source": "raw/000701.png",
+      "raw": "raw/000701.png",
+      "elapsed_seconds": 163.88572369999747,
+      "source_duration_seconds": 0.3422675000037998,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 702,
+      "source": "raw/000702.png",
+      "raw": "raw/000702.png",
+      "elapsed_seconds": 164.22799120000127,
+      "source_duration_seconds": 0.21867529999872204,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 727,
+      "source": "raw/000727.png",
+      "raw": "raw/000727.png",
+      "elapsed_seconds": 168.46027199999662,
+      "source_duration_seconds": 0.24140250000345986,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 728,
+      "source": "raw/000728.png",
+      "raw": "raw/000728.png",
+      "elapsed_seconds": 168.70167450000008,
+      "source_duration_seconds": 0.23430399999779183,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 729,
+      "source": "raw/000729.png",
+      "raw": "raw/000729.png",
+      "elapsed_seconds": 168.93597849999787,
+      "source_duration_seconds": 0.351786400002311,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 730,
+      "source": "raw/000730.png",
+      "raw": "raw/000730.png",
+      "elapsed_seconds": 169.28776490000018,
+      "source_duration_seconds": 0.37511309999536024,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 731,
+      "source": "raw/000731.png",
+      "raw": "raw/000731.png",
+      "elapsed_seconds": 169.66287799999554,
+      "source_duration_seconds": 0.40276750000339234,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 732,
+      "source": "raw/000732.png",
+      "raw": "raw/000732.png",
+      "elapsed_seconds": 170.06564549999894,
+      "source_duration_seconds": 0.34742610000103014,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 733,
+      "source": "raw/000733.png",
+      "raw": "raw/000733.png",
+      "elapsed_seconds": 170.41307159999997,
+      "source_duration_seconds": 0.3746037000018987,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 734,
+      "source": "raw/000734.png",
+      "raw": "raw/000734.png",
+      "elapsed_seconds": 170.78767530000187,
+      "source_duration_seconds": 0.3840439999985392,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 735,
+      "source": "raw/000735.png",
+      "raw": "raw/000735.png",
+      "elapsed_seconds": 171.1717193000004,
+      "source_duration_seconds": 0.3181046999961836,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 736,
+      "source": "raw/000736.png",
+      "raw": "raw/000736.png",
+      "elapsed_seconds": 171.4898239999966,
+      "source_duration_seconds": 0.35791410000092583,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 737,
+      "source": "raw/000737.png",
+      "raw": "raw/000737.png",
+      "elapsed_seconds": 171.8477380999975,
+      "source_duration_seconds": 0.34568209999997634,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 738,
+      "source": "raw/000738.png",
+      "raw": "raw/000738.png",
+      "elapsed_seconds": 172.1934201999975,
+      "source_duration_seconds": 0.33154820000345353,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 739,
+      "source": "raw/000739.png",
+      "raw": "raw/000739.png",
+      "elapsed_seconds": 172.52496840000094,
+      "source_duration_seconds": 0.3685488999981317,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 740,
+      "source": "raw/000740.png",
+      "raw": "raw/000740.png",
+      "elapsed_seconds": 172.89351729999908,
+      "source_duration_seconds": 0.3322986999992281,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 741,
+      "source": "raw/000741.png",
+      "raw": "raw/000741.png",
+      "elapsed_seconds": 173.2258159999983,
+      "source_duration_seconds": 0.32329960000060964,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 742,
+      "source": "raw/000742.png",
+      "raw": "raw/000742.png",
+      "elapsed_seconds": 173.5491155999989,
+      "source_duration_seconds": 0.3587469999984023,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 743,
+      "source": "raw/000743.png",
+      "raw": "raw/000743.png",
+      "elapsed_seconds": 173.90786259999732,
+      "source_duration_seconds": 0.19256850000238046,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 768,
+      "source": "raw/000768.png",
+      "raw": "raw/000768.png",
+      "elapsed_seconds": 178.1107475999961,
+      "source_duration_seconds": 0.21847420000267448,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 769,
+      "source": "raw/000769.png",
+      "raw": "raw/000769.png",
+      "elapsed_seconds": 178.32922179999878,
+      "source_duration_seconds": 0.20969009999680566,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 770,
+      "source": "raw/000770.png",
+      "raw": "raw/000770.png",
+      "elapsed_seconds": 178.53891189999558,
+      "source_duration_seconds": 0.3442120000036084,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 771,
+      "source": "raw/000771.png",
+      "raw": "raw/000771.png",
+      "elapsed_seconds": 178.8831238999992,
+      "source_duration_seconds": 0.35449009999865666,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 772,
+      "source": "raw/000772.png",
+      "raw": "raw/000772.png",
+      "elapsed_seconds": 179.23761399999785,
+      "source_duration_seconds": 0.36169109999900684,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 773,
+      "source": "raw/000773.png",
+      "raw": "raw/000773.png",
+      "elapsed_seconds": 179.59930509999685,
+      "source_duration_seconds": 0.34019410000473727,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 774,
+      "source": "raw/000774.png",
+      "raw": "raw/000774.png",
+      "elapsed_seconds": 179.9394992000016,
+      "source_duration_seconds": 0.3551489999954356,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 775,
+      "source": "raw/000775.png",
+      "raw": "raw/000775.png",
+      "elapsed_seconds": 180.29464819999703,
+      "source_duration_seconds": 0.36441600000398466,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 776,
+      "source": "raw/000776.png",
+      "raw": "raw/000776.png",
+      "elapsed_seconds": 180.659064200001,
+      "source_duration_seconds": 0.37922689999686554,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 777,
+      "source": "raw/000777.png",
+      "raw": "raw/000777.png",
+      "elapsed_seconds": 181.03829109999788,
+      "source_duration_seconds": 0.3332695999997668,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 778,
+      "source": "raw/000778.png",
+      "raw": "raw/000778.png",
+      "elapsed_seconds": 181.37156069999764,
+      "source_duration_seconds": 0.3307280000008177,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 779,
+      "source": "raw/000779.png",
+      "raw": "raw/000779.png",
+      "elapsed_seconds": 181.70228869999846,
+      "source_duration_seconds": 0.3210131000014371,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 780,
+      "source": "raw/000780.png",
+      "raw": "raw/000780.png",
+      "elapsed_seconds": 182.0233017999999,
+      "source_duration_seconds": 0.290920699997514,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 781,
+      "source": "raw/000781.png",
+      "raw": "raw/000781.png",
+      "elapsed_seconds": 182.3142224999974,
+      "source_duration_seconds": 0.27029549999861047,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 782,
+      "source": "raw/000782.png",
+      "raw": "raw/000782.png",
+      "elapsed_seconds": 182.58451799999602,
+      "source_duration_seconds": 0.2592800000056741,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 783,
+      "source": "raw/000783.png",
+      "raw": "raw/000783.png",
+      "elapsed_seconds": 182.8437980000017,
+      "source_duration_seconds": 0.28323229999659816,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 784,
+      "source": "raw/000784.png",
+      "raw": "raw/000784.png",
+      "elapsed_seconds": 183.1270302999983,
+      "source_duration_seconds": 0.29199289999814937,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 785,
+      "source": "raw/000785.png",
+      "raw": "raw/000785.png",
+      "elapsed_seconds": 183.41902319999645,
+      "source_duration_seconds": 0.22662330000457587,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 809,
+      "source": "raw/000809.png",
+      "raw": "raw/000809.png",
+      "elapsed_seconds": 187.4819639999987,
+      "source_duration_seconds": 0.2274933000007877,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 810,
+      "source": "raw/000810.png",
+      "raw": "raw/000810.png",
+      "elapsed_seconds": 187.70945729999949,
+      "source_duration_seconds": 0.17784820000088075,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 811,
+      "source": "raw/000811.png",
+      "raw": "raw/000811.png",
+      "elapsed_seconds": 187.88730550000037,
+      "source_duration_seconds": 0.25545899999997346,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 812,
+      "source": "raw/000812.png",
+      "raw": "raw/000812.png",
+      "elapsed_seconds": 188.14276450000034,
+      "source_duration_seconds": 0.34798729999602074,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 813,
+      "source": "raw/000813.png",
+      "raw": "raw/000813.png",
+      "elapsed_seconds": 188.49075179999636,
+      "source_duration_seconds": 0.3603531000044313,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 814,
+      "source": "raw/000814.png",
+      "raw": "raw/000814.png",
+      "elapsed_seconds": 188.8511049000008,
+      "source_duration_seconds": 0.34611210000002757,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 815,
+      "source": "raw/000815.png",
+      "raw": "raw/000815.png",
+      "elapsed_seconds": 189.19721700000082,
+      "source_duration_seconds": 0.35734129999764264,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 816,
+      "source": "raw/000816.png",
+      "raw": "raw/000816.png",
+      "elapsed_seconds": 189.55455829999846,
+      "source_duration_seconds": 0.30176339999889024,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 817,
+      "source": "raw/000817.png",
+      "raw": "raw/000817.png",
+      "elapsed_seconds": 189.85632169999735,
+      "source_duration_seconds": 0.2870928999982425,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 818,
+      "source": "raw/000818.png",
+      "raw": "raw/000818.png",
+      "elapsed_seconds": 190.1434145999956,
+      "source_duration_seconds": 0.25448270000197226,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 819,
+      "source": "raw/000819.png",
+      "raw": "raw/000819.png",
+      "elapsed_seconds": 190.39789729999757,
+      "source_duration_seconds": 0.24945100000331877,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 820,
+      "source": "raw/000820.png",
+      "raw": "raw/000820.png",
+      "elapsed_seconds": 190.64734830000089,
+      "source_duration_seconds": 0.21829589999833843,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 821,
+      "source": "raw/000821.png",
+      "raw": "raw/000821.png",
+      "elapsed_seconds": 190.86564419999922,
+      "source_duration_seconds": 0.2377249999990454,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 822,
+      "source": "raw/000822.png",
+      "raw": "raw/000822.png",
+      "elapsed_seconds": 191.10336919999827,
+      "source_duration_seconds": 0.1921442000020761,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 823,
+      "source": "raw/000823.png",
+      "raw": "raw/000823.png",
+      "elapsed_seconds": 191.29551340000035,
+      "source_duration_seconds": 0.24346430000150576,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 824,
+      "source": "raw/000824.png",
+      "raw": "raw/000824.png",
+      "elapsed_seconds": 191.53897770000185,
+      "source_duration_seconds": 0.2410223999977461,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 825,
+      "source": "raw/000825.png",
+      "raw": "raw/000825.png",
+      "elapsed_seconds": 191.7800000999996,
+      "source_duration_seconds": 0.21203149999928428,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 826,
+      "source": "raw/000826.png",
+      "raw": "raw/000826.png",
+      "elapsed_seconds": 191.99203159999888,
+      "source_duration_seconds": 0.22104969999782043,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 827,
+      "source": "raw/000827.png",
+      "raw": "raw/000827.png",
+      "elapsed_seconds": 192.2130812999967,
+      "source_duration_seconds": 0.19979910000256496,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 828,
+      "source": "raw/000828.png",
+      "raw": "raw/000828.png",
+      "elapsed_seconds": 192.41288039999927,
+      "source_duration_seconds": 0.2598844000021927,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 829,
+      "source": "raw/000829.png",
+      "raw": "raw/000829.png",
+      "elapsed_seconds": 192.67276480000146,
+      "source_duration_seconds": 0.2053269999960321,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 830,
+      "source": "raw/000830.png",
+      "raw": "raw/000830.png",
+      "elapsed_seconds": 192.8780917999975,
+      "source_duration_seconds": 0.22124150000308873,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 831,
+      "source": "raw/000831.png",
+      "raw": "raw/000831.png",
+      "elapsed_seconds": 193.09933330000058,
+      "source_duration_seconds": 0.2384057999952347,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 832,
+      "source": "raw/000832.png",
+      "raw": "raw/000832.png",
+      "elapsed_seconds": 193.33773909999582,
+      "source_duration_seconds": 0.26422500000626314,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 833,
+      "source": "raw/000833.png",
+      "raw": "raw/000833.png",
+      "elapsed_seconds": 193.60196410000208,
+      "source_duration_seconds": 0.20300159999897005,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 834,
+      "source": "raw/000834.png",
+      "raw": "raw/000834.png",
+      "elapsed_seconds": 193.80496570000105,
+      "source_duration_seconds": 0.3390992999993614,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 835,
+      "source": "raw/000835.png",
+      "raw": "raw/000835.png",
+      "elapsed_seconds": 194.1440650000004,
+      "source_duration_seconds": 0.33822779999900376,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 836,
+      "source": "raw/000836.png",
+      "raw": "raw/000836.png",
+      "elapsed_seconds": 194.4822927999994,
+      "source_duration_seconds": 0.310532499999681,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 837,
+      "source": "raw/000837.png",
+      "raw": "raw/000837.png",
+      "elapsed_seconds": 194.7928252999991,
+      "source_duration_seconds": 0.2965117999992799,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 838,
+      "source": "raw/000838.png",
+      "raw": "raw/000838.png",
+      "elapsed_seconds": 195.08933709999837,
+      "source_duration_seconds": 0.31846889999724226,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 839,
+      "source": "raw/000839.png",
+      "raw": "raw/000839.png",
+      "elapsed_seconds": 195.40780599999562,
+      "source_duration_seconds": 0.30271750000247266,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 840,
+      "source": "raw/000840.png",
+      "raw": "raw/000840.png",
+      "elapsed_seconds": 195.7105234999981,
+      "source_duration_seconds": 0.33324500000162516,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 841,
+      "source": "raw/000841.png",
+      "raw": "raw/000841.png",
+      "elapsed_seconds": 196.04376849999971,
+      "source_duration_seconds": 0.3349220999953104,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 842,
+      "source": "raw/000842.png",
+      "raw": "raw/000842.png",
+      "elapsed_seconds": 196.37869059999502,
+      "source_duration_seconds": 0.1707784000027459,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 866,
+      "source": "raw/000866.png",
+      "raw": "raw/000866.png",
+      "elapsed_seconds": 200.38589610000054,
+      "source_duration_seconds": 0.20902859999478096,
+      "gif_duration_ms": 30
+    },
+    {
+      "index": 867,
+      "source": "raw/000867.png",
+      "raw": "raw/000867.png",
+      "elapsed_seconds": 200.59492469999532,
+      "source_duration_seconds": 0.24879800000053365,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 868,
+      "source": "raw/000868.png",
+      "raw": "raw/000868.png",
+      "elapsed_seconds": 200.84372269999585,
+      "source_duration_seconds": 0.31993710000097053,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 869,
+      "source": "raw/000869.png",
+      "raw": "raw/000869.png",
+      "elapsed_seconds": 201.16365979999682,
+      "source_duration_seconds": 0.37650140000187093,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 870,
+      "source": "raw/000870.png",
+      "raw": "raw/000870.png",
+      "elapsed_seconds": 201.5401611999987,
+      "source_duration_seconds": 0.34149559999787016,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 871,
+      "source": "raw/000871.png",
+      "raw": "raw/000871.png",
+      "elapsed_seconds": 201.88165679999656,
+      "source_duration_seconds": 0.3513146000041161,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 872,
+      "source": "raw/000872.png",
+      "raw": "raw/000872.png",
+      "elapsed_seconds": 202.23297140000068,
+      "source_duration_seconds": 0.2590187999958289,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 873,
+      "source": "raw/000873.png",
+      "raw": "raw/000873.png",
+      "elapsed_seconds": 202.4919901999965,
+      "source_duration_seconds": 0.26985599999898113,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 874,
+      "source": "raw/000874.png",
+      "raw": "raw/000874.png",
+      "elapsed_seconds": 202.7618461999955,
+      "source_duration_seconds": 0.24643790000118315,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 875,
+      "source": "raw/000875.png",
+      "raw": "raw/000875.png",
+      "elapsed_seconds": 203.00828409999667,
+      "source_duration_seconds": 0.35020169999916106,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 876,
+      "source": "raw/000876.png",
+      "raw": "raw/000876.png",
+      "elapsed_seconds": 203.35848579999583,
+      "source_duration_seconds": 0.31437369999912335,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 877,
+      "source": "raw/000877.png",
+      "raw": "raw/000877.png",
+      "elapsed_seconds": 203.67285949999496,
+      "source_duration_seconds": 0.3510588000062853,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 878,
+      "source": "raw/000878.png",
+      "raw": "raw/000878.png",
+      "elapsed_seconds": 204.02391830000124,
+      "source_duration_seconds": 0.3406226000006427,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 879,
+      "source": "raw/000879.png",
+      "raw": "raw/000879.png",
+      "elapsed_seconds": 204.36454090000188,
+      "source_duration_seconds": 0.31046729999798117,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 880,
+      "source": "raw/000880.png",
+      "raw": "raw/000880.png",
+      "elapsed_seconds": 204.67500819999987,
+      "source_duration_seconds": 0.3428409999978612,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 881,
+      "source": "raw/000881.png",
+      "raw": "raw/000881.png",
+      "elapsed_seconds": 205.01784919999773,
+      "source_duration_seconds": 0.29854730000079144,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 882,
+      "source": "raw/000882.png",
+      "raw": "raw/000882.png",
+      "elapsed_seconds": 205.31639649999852,
+      "source_duration_seconds": 0.31066979999741307,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 883,
+      "source": "raw/000883.png",
+      "raw": "raw/000883.png",
+      "elapsed_seconds": 205.62706629999593,
+      "source_duration_seconds": 0.37632680000388063,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 884,
+      "source": "raw/000884.png",
+      "raw": "raw/000884.png",
+      "elapsed_seconds": 206.0033930999998,
+      "source_duration_seconds": 0.3102489000011701,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 885,
+      "source": "raw/000885.png",
+      "raw": "raw/000885.png",
+      "elapsed_seconds": 206.31364200000098,
+      "source_duration_seconds": 0.3473649999941699,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 886,
+      "source": "raw/000886.png",
+      "raw": "raw/000886.png",
+      "elapsed_seconds": 206.66100699999515,
+      "source_duration_seconds": 0.3618854000014835,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 887,
+      "source": "raw/000887.png",
+      "raw": "raw/000887.png",
+      "elapsed_seconds": 207.02289239999664,
+      "source_duration_seconds": 0.3419687999994494,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 888,
+      "source": "raw/000888.png",
+      "raw": "raw/000888.png",
+      "elapsed_seconds": 207.36486119999608,
+      "source_duration_seconds": 0.30061940000450704,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 889,
+      "source": "raw/000889.png",
+      "raw": "raw/000889.png",
+      "elapsed_seconds": 207.6654806000006,
+      "source_duration_seconds": 0.3174201000001631,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 890,
+      "source": "raw/000890.png",
+      "raw": "raw/000890.png",
+      "elapsed_seconds": 207.98290070000076,
+      "source_duration_seconds": 0.3324367999957758,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 891,
+      "source": "raw/000891.png",
+      "raw": "raw/000891.png",
+      "elapsed_seconds": 208.31533749999653,
+      "source_duration_seconds": 0.2895474000033573,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 892,
+      "source": "raw/000892.png",
+      "raw": "raw/000892.png",
+      "elapsed_seconds": 208.6048848999999,
+      "source_duration_seconds": 0.3568251999968197,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 893,
+      "source": "raw/000893.png",
+      "raw": "raw/000893.png",
+      "elapsed_seconds": 208.9617100999967,
+      "source_duration_seconds": 0.3323400000008405,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 894,
+      "source": "raw/000894.png",
+      "raw": "raw/000894.png",
+      "elapsed_seconds": 209.29405009999755,
+      "source_duration_seconds": 0.33057990000088466,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 895,
+      "source": "raw/000895.png",
+      "raw": "raw/000895.png",
+      "elapsed_seconds": 209.62462999999843,
+      "source_duration_seconds": 0.35949300000356743,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 896,
+      "source": "raw/000896.png",
+      "raw": "raw/000896.png",
+      "elapsed_seconds": 209.984123000002,
+      "source_duration_seconds": 0.27067699999315664,
+      "gif_duration_ms": 40
+    },
+    {
+      "index": 897,
+      "source": "raw/000897.png",
+      "raw": "raw/000897.png",
+      "elapsed_seconds": 210.25479999999516,
+      "source_duration_seconds": 0.3331977000052575,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 898,
+      "source": "raw/000898.png",
+      "raw": "raw/000898.png",
+      "elapsed_seconds": 210.58799770000041,
+      "source_duration_seconds": 0.34635379999963334,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 899,
+      "source": "raw/000899.png",
+      "raw": "raw/000899.png",
+      "elapsed_seconds": 210.93435150000005,
+      "source_duration_seconds": 0.33745400000043446,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 900,
+      "source": "raw/000900.png",
+      "raw": "raw/000900.png",
+      "elapsed_seconds": 211.27180550000048,
+      "source_duration_seconds": 0.31920479999826057,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 901,
+      "source": "raw/000901.png",
+      "raw": "raw/000901.png",
+      "elapsed_seconds": 211.59101029999874,
+      "source_duration_seconds": 0.3378270999965025,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 902,
+      "source": "raw/000902.png",
+      "raw": "raw/000902.png",
+      "elapsed_seconds": 211.92883739999525,
+      "source_duration_seconds": 0.30129040000610985,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 903,
+      "source": "raw/000903.png",
+      "raw": "raw/000903.png",
+      "elapsed_seconds": 212.23012780000136,
+      "source_duration_seconds": 0.30308030000014696,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 904,
+      "source": "raw/000904.png",
+      "raw": "raw/000904.png",
+      "elapsed_seconds": 212.5332081000015,
+      "source_duration_seconds": 0.3846544999978505,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 905,
+      "source": "raw/000905.png",
+      "raw": "raw/000905.png",
+      "elapsed_seconds": 212.91786259999935,
+      "source_duration_seconds": 0.34868809999898076,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 906,
+      "source": "raw/000906.png",
+      "raw": "raw/000906.png",
+      "elapsed_seconds": 213.26655069999833,
+      "source_duration_seconds": 0.3474629999982426,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 907,
+      "source": "raw/000907.png",
+      "raw": "raw/000907.png",
+      "elapsed_seconds": 213.61401369999658,
+      "source_duration_seconds": 0.32250780000322266,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 908,
+      "source": "raw/000908.png",
+      "raw": "raw/000908.png",
+      "elapsed_seconds": 213.9365214999998,
+      "source_duration_seconds": 0.33880430000135675,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 909,
+      "source": "raw/000909.png",
+      "raw": "raw/000909.png",
+      "elapsed_seconds": 214.27532580000116,
+      "source_duration_seconds": 0.31525110000075074,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 910,
+      "source": "raw/000910.png",
+      "raw": "raw/000910.png",
+      "elapsed_seconds": 214.5905769000019,
+      "source_duration_seconds": 0.33371859999897424,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 911,
+      "source": "raw/000911.png",
+      "raw": "raw/000911.png",
+      "elapsed_seconds": 214.92429550000088,
+      "source_duration_seconds": 0.3522411999947508,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 912,
+      "source": "raw/000912.png",
+      "raw": "raw/000912.png",
+      "elapsed_seconds": 215.27653669999563,
+      "source_duration_seconds": 0.3050057000000379,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 913,
+      "source": "raw/000913.png",
+      "raw": "raw/000913.png",
+      "elapsed_seconds": 215.58154239999567,
+      "source_duration_seconds": 0.33718530000624014,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 914,
+      "source": "raw/000914.png",
+      "raw": "raw/000914.png",
+      "elapsed_seconds": 215.9187277000019,
+      "source_duration_seconds": 0.34437729999626754,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 915,
+      "source": "raw/000915.png",
+      "raw": "raw/000915.png",
+      "elapsed_seconds": 216.26310499999818,
+      "source_duration_seconds": 0.30451069999980973,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 916,
+      "source": "raw/000916.png",
+      "raw": "raw/000916.png",
+      "elapsed_seconds": 216.567615699998,
+      "source_duration_seconds": 0.35298450000118464,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 917,
+      "source": "raw/000917.png",
+      "raw": "raw/000917.png",
+      "elapsed_seconds": 216.92060019999917,
+      "source_duration_seconds": 0.3543671000006725,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 918,
+      "source": "raw/000918.png",
+      "raw": "raw/000918.png",
+      "elapsed_seconds": 217.27496729999984,
+      "source_duration_seconds": 0.3505682999966666,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 919,
+      "source": "raw/000919.png",
+      "raw": "raw/000919.png",
+      "elapsed_seconds": 217.6255355999965,
+      "source_duration_seconds": 0.34374229999957606,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 920,
+      "source": "raw/000920.png",
+      "raw": "raw/000920.png",
+      "elapsed_seconds": 217.9692778999961,
+      "source_duration_seconds": 0.31901210000069113,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 921,
+      "source": "raw/000921.png",
+      "raw": "raw/000921.png",
+      "elapsed_seconds": 218.28828999999678,
+      "source_duration_seconds": 0.3461427000002004,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 922,
+      "source": "raw/000922.png",
+      "raw": "raw/000922.png",
+      "elapsed_seconds": 218.63443269999698,
+      "source_duration_seconds": 0.29975389999890467,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 923,
+      "source": "raw/000923.png",
+      "raw": "raw/000923.png",
+      "elapsed_seconds": 218.93418659999588,
+      "source_duration_seconds": 0.33927410000615055,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 924,
+      "source": "raw/000924.png",
+      "raw": "raw/000924.png",
+      "elapsed_seconds": 219.27346070000203,
+      "source_duration_seconds": 0.35560329999862006,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 925,
+      "source": "raw/000925.png",
+      "raw": "raw/000925.png",
+      "elapsed_seconds": 219.62906400000065,
+      "source_duration_seconds": 0.33274259999598144,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 926,
+      "source": "raw/000926.png",
+      "raw": "raw/000926.png",
+      "elapsed_seconds": 219.96180659999663,
+      "source_duration_seconds": 0.3085083000041777,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 927,
+      "source": "raw/000927.png",
+      "raw": "raw/000927.png",
+      "elapsed_seconds": 220.2703149000008,
+      "source_duration_seconds": 0.32591369999863673,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 928,
+      "source": "raw/000928.png",
+      "raw": "raw/000928.png",
+      "elapsed_seconds": 220.59622859999945,
+      "source_duration_seconds": 0.34376239999983227,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 929,
+      "source": "raw/000929.png",
+      "raw": "raw/000929.png",
+      "elapsed_seconds": 220.93999099999928,
+      "source_duration_seconds": 0.3555026999965776,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 930,
+      "source": "raw/000930.png",
+      "raw": "raw/000930.png",
+      "elapsed_seconds": 221.29549369999586,
+      "source_duration_seconds": 0.35615940000570845,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 931,
+      "source": "raw/000931.png",
+      "raw": "raw/000931.png",
+      "elapsed_seconds": 221.65165310000157,
+      "source_duration_seconds": 0.3264357999942149,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 932,
+      "source": "raw/000932.png",
+      "raw": "raw/000932.png",
+      "elapsed_seconds": 221.97808889999578,
+      "source_duration_seconds": 0.3441222000037669,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 933,
+      "source": "raw/000933.png",
+      "raw": "raw/000933.png",
+      "elapsed_seconds": 222.32221109999955,
+      "source_duration_seconds": 0.3092644999996992,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 934,
+      "source": "raw/000934.png",
+      "raw": "raw/000934.png",
+      "elapsed_seconds": 222.63147559999925,
+      "source_duration_seconds": 0.3213742000007187,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 935,
+      "source": "raw/000935.png",
+      "raw": "raw/000935.png",
+      "elapsed_seconds": 222.95284979999997,
+      "source_duration_seconds": 0.34547010000096634,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 936,
+      "source": "raw/000936.png",
+      "raw": "raw/000936.png",
+      "elapsed_seconds": 223.29831990000093,
+      "source_duration_seconds": 0.326469100000395,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 937,
+      "source": "raw/000937.png",
+      "raw": "raw/000937.png",
+      "elapsed_seconds": 223.62478900000133,
+      "source_duration_seconds": 0.3447343000007095,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 938,
+      "source": "raw/000938.png",
+      "raw": "raw/000938.png",
+      "elapsed_seconds": 223.96952330000204,
+      "source_duration_seconds": 0.3165092999988701,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 939,
+      "source": "raw/000939.png",
+      "raw": "raw/000939.png",
+      "elapsed_seconds": 224.2860326000009,
+      "source_duration_seconds": 0.3028524999972433,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 940,
+      "source": "raw/000940.png",
+      "raw": "raw/000940.png",
+      "elapsed_seconds": 224.58888509999815,
+      "source_duration_seconds": 0.34123920000274666,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 941,
+      "source": "raw/000941.png",
+      "raw": "raw/000941.png",
+      "elapsed_seconds": 224.9301243000009,
+      "source_duration_seconds": 0.3321647999982815,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 942,
+      "source": "raw/000942.png",
+      "raw": "raw/000942.png",
+      "elapsed_seconds": 225.26228909999918,
+      "source_duration_seconds": 0.3252728000006755,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 943,
+      "source": "raw/000943.png",
+      "raw": "raw/000943.png",
+      "elapsed_seconds": 225.58756189999986,
+      "source_duration_seconds": 0.3457492999950773,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 944,
+      "source": "raw/000944.png",
+      "raw": "raw/000944.png",
+      "elapsed_seconds": 225.93331119999493,
+      "source_duration_seconds": 0.3567339000001084,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 945,
+      "source": "raw/000945.png",
+      "raw": "raw/000945.png",
+      "elapsed_seconds": 226.29004509999504,
+      "source_duration_seconds": 0.2794530000028317,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 946,
+      "source": "raw/000946.png",
+      "raw": "raw/000946.png",
+      "elapsed_seconds": 226.56949809999787,
+      "source_duration_seconds": 0.3731606000001193,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 947,
+      "source": "raw/000947.png",
+      "raw": "raw/000947.png",
+      "elapsed_seconds": 226.942658699998,
+      "source_duration_seconds": 0.36389449999842327,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 948,
+      "source": "raw/000948.png",
+      "raw": "raw/000948.png",
+      "elapsed_seconds": 227.30655319999642,
+      "source_duration_seconds": 0.297541200001433,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 949,
+      "source": "raw/000949.png",
+      "raw": "raw/000949.png",
+      "elapsed_seconds": 227.60409439999785,
+      "source_duration_seconds": 0.3701619999992545,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 950,
+      "source": "raw/000950.png",
+      "raw": "raw/000950.png",
+      "elapsed_seconds": 227.9742563999971,
+      "source_duration_seconds": 0.33291640000243206,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 951,
+      "source": "raw/000951.png",
+      "raw": "raw/000951.png",
+      "elapsed_seconds": 228.30717279999953,
+      "source_duration_seconds": 0.35134609999659006,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 952,
+      "source": "raw/000952.png",
+      "raw": "raw/000952.png",
+      "elapsed_seconds": 228.65851889999612,
+      "source_duration_seconds": 0.35363280000456143,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 953,
+      "source": "raw/000953.png",
+      "raw": "raw/000953.png",
+      "elapsed_seconds": 229.0121517000007,
+      "source_duration_seconds": 0.3255635999958031,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 954,
+      "source": "raw/000954.png",
+      "raw": "raw/000954.png",
+      "elapsed_seconds": 229.3377152999965,
+      "source_duration_seconds": 0.39007349999883445,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 955,
+      "source": "raw/000955.png",
+      "raw": "raw/000955.png",
+      "elapsed_seconds": 229.72778879999532,
+      "source_duration_seconds": 0.31542170000466285,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 956,
+      "source": "raw/000956.png",
+      "raw": "raw/000956.png",
+      "elapsed_seconds": 230.0432105,
+      "source_duration_seconds": 0.3061426999993273,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 957,
+      "source": "raw/000957.png",
+      "raw": "raw/000957.png",
+      "elapsed_seconds": 230.3493531999993,
+      "source_duration_seconds": 0.3636652999994112,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 958,
+      "source": "raw/000958.png",
+      "raw": "raw/000958.png",
+      "elapsed_seconds": 230.71301849999873,
+      "source_duration_seconds": 0.3583306000000448,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 959,
+      "source": "raw/000959.png",
+      "raw": "raw/000959.png",
+      "elapsed_seconds": 231.07134909999877,
+      "source_duration_seconds": 0.33037719999992987,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 960,
+      "source": "raw/000960.png",
+      "raw": "raw/000960.png",
+      "elapsed_seconds": 231.4017262999987,
+      "source_duration_seconds": 0.3470879000014975,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 961,
+      "source": "raw/000961.png",
+      "raw": "raw/000961.png",
+      "elapsed_seconds": 231.7488142000002,
+      "source_duration_seconds": 0.3318950999964727,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 962,
+      "source": "raw/000962.png",
+      "raw": "raw/000962.png",
+      "elapsed_seconds": 232.08070929999667,
+      "source_duration_seconds": 0.321500099998957,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 963,
+      "source": "raw/000963.png",
+      "raw": "raw/000963.png",
+      "elapsed_seconds": 232.40220939999563,
+      "source_duration_seconds": 0.3832795000053011,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 964,
+      "source": "raw/000964.png",
+      "raw": "raw/000964.png",
+      "elapsed_seconds": 232.78548890000093,
+      "source_duration_seconds": 0.33125409999775,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 965,
+      "source": "raw/000965.png",
+      "raw": "raw/000965.png",
+      "elapsed_seconds": 233.11674299999868,
+      "source_duration_seconds": 0.32283859999733977,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 966,
+      "source": "raw/000966.png",
+      "raw": "raw/000966.png",
+      "elapsed_seconds": 233.43958159999602,
+      "source_duration_seconds": 0.3222961999999825,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 967,
+      "source": "raw/000967.png",
+      "raw": "raw/000967.png",
+      "elapsed_seconds": 233.761877799996,
+      "source_duration_seconds": 0.3616156999996747,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 968,
+      "source": "raw/000968.png",
+      "raw": "raw/000968.png",
+      "elapsed_seconds": 234.12349349999567,
+      "source_duration_seconds": 0.2993975999997929,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 969,
+      "source": "raw/000969.png",
+      "raw": "raw/000969.png",
+      "elapsed_seconds": 234.42289109999547,
+      "source_duration_seconds": 0.3237451000022702,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 970,
+      "source": "raw/000970.png",
+      "raw": "raw/000970.png",
+      "elapsed_seconds": 234.74663619999774,
+      "source_duration_seconds": 0.3963722000044072,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 971,
+      "source": "raw/000971.png",
+      "raw": "raw/000971.png",
+      "elapsed_seconds": 235.14300840000215,
+      "source_duration_seconds": 0.33519349999551196,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 972,
+      "source": "raw/000972.png",
+      "raw": "raw/000972.png",
+      "elapsed_seconds": 235.47820189999766,
+      "source_duration_seconds": 0.3501092000005883,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 973,
+      "source": "raw/000973.png",
+      "raw": "raw/000973.png",
+      "elapsed_seconds": 235.82831109999825,
+      "source_duration_seconds": 0.36292189999949187,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 974,
+      "source": "raw/000974.png",
+      "raw": "raw/000974.png",
+      "elapsed_seconds": 236.19123299999774,
+      "source_duration_seconds": 0.3400321000008262,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 975,
+      "source": "raw/000975.png",
+      "raw": "raw/000975.png",
+      "elapsed_seconds": 236.53126509999856,
+      "source_duration_seconds": 0.32938409999769647,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 976,
+      "source": "raw/000976.png",
+      "raw": "raw/000976.png",
+      "elapsed_seconds": 236.86064919999626,
+      "source_duration_seconds": 0.3112336000049254,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 977,
+      "source": "raw/000977.png",
+      "raw": "raw/000977.png",
+      "elapsed_seconds": 237.17188280000119,
+      "source_duration_seconds": 0.35354849999566795,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 978,
+      "source": "raw/000978.png",
+      "raw": "raw/000978.png",
+      "elapsed_seconds": 237.52543129999685,
+      "source_duration_seconds": 0.337983900004474,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 979,
+      "source": "raw/000979.png",
+      "raw": "raw/000979.png",
+      "elapsed_seconds": 237.86341520000133,
+      "source_duration_seconds": 0.37143219999416033,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 980,
+      "source": "raw/000980.png",
+      "raw": "raw/000980.png",
+      "elapsed_seconds": 238.2348473999955,
+      "source_duration_seconds": 0.31744130000151927,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 981,
+      "source": "raw/000981.png",
+      "raw": "raw/000981.png",
+      "elapsed_seconds": 238.552288699997,
+      "source_duration_seconds": 0.35877569999865955,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 982,
+      "source": "raw/000982.png",
+      "raw": "raw/000982.png",
+      "elapsed_seconds": 238.91106439999567,
+      "source_duration_seconds": 0.34206580000318354,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 983,
+      "source": "raw/000983.png",
+      "raw": "raw/000983.png",
+      "elapsed_seconds": 239.25313019999885,
+      "source_duration_seconds": 0.3418600000004517,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 984,
+      "source": "raw/000984.png",
+      "raw": "raw/000984.png",
+      "elapsed_seconds": 239.5949901999993,
+      "source_duration_seconds": 0.3264790999965044,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 985,
+      "source": "raw/000985.png",
+      "raw": "raw/000985.png",
+      "elapsed_seconds": 239.9214692999958,
+      "source_duration_seconds": 0.30774810000002617,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 986,
+      "source": "raw/000986.png",
+      "raw": "raw/000986.png",
+      "elapsed_seconds": 240.22921739999583,
+      "source_duration_seconds": 0.2862830000012764,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 987,
+      "source": "raw/000987.png",
+      "raw": "raw/000987.png",
+      "elapsed_seconds": 240.5155003999971,
+      "source_duration_seconds": 0.32532560000254307,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 988,
+      "source": "raw/000988.png",
+      "raw": "raw/000988.png",
+      "elapsed_seconds": 240.84082599999965,
+      "source_duration_seconds": 0.3582715000011376,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 989,
+      "source": "raw/000989.png",
+      "raw": "raw/000989.png",
+      "elapsed_seconds": 241.1990975000008,
+      "source_duration_seconds": 0.2946707000010065,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 990,
+      "source": "raw/000990.png",
+      "raw": "raw/000990.png",
+      "elapsed_seconds": 241.4937682000018,
+      "source_duration_seconds": 0.386371099993994,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 991,
+      "source": "raw/000991.png",
+      "raw": "raw/000991.png",
+      "elapsed_seconds": 241.8801392999958,
+      "source_duration_seconds": 0.3660080000045127,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 992,
+      "source": "raw/000992.png",
+      "raw": "raw/000992.png",
+      "elapsed_seconds": 242.2461473000003,
+      "source_duration_seconds": 0.35052319999522297,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 993,
+      "source": "raw/000993.png",
+      "raw": "raw/000993.png",
+      "elapsed_seconds": 242.59667049999553,
+      "source_duration_seconds": 0.3394601000036346,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 994,
+      "source": "raw/000994.png",
+      "raw": "raw/000994.png",
+      "elapsed_seconds": 242.93613059999916,
+      "source_duration_seconds": 0.33659919999627164,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 995,
+      "source": "raw/000995.png",
+      "raw": "raw/000995.png",
+      "elapsed_seconds": 243.27272979999543,
+      "source_duration_seconds": 0.39836210000066785,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 996,
+      "source": "raw/000996.png",
+      "raw": "raw/000996.png",
+      "elapsed_seconds": 243.6710918999961,
+      "source_duration_seconds": 0.3541849000030197,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 997,
+      "source": "raw/000997.png",
+      "raw": "raw/000997.png",
+      "elapsed_seconds": 244.02527679999912,
+      "source_duration_seconds": 0.3236438000021735,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 998,
+      "source": "raw/000998.png",
+      "raw": "raw/000998.png",
+      "elapsed_seconds": 244.3489206000013,
+      "source_duration_seconds": 0.3257538999969256,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 999,
+      "source": "raw/000999.png",
+      "raw": "raw/000999.png",
+      "elapsed_seconds": 244.67467449999822,
+      "source_duration_seconds": 0.33872020000126213,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 1000,
+      "source": "raw/001000.png",
+      "raw": "raw/001000.png",
+      "elapsed_seconds": 245.01339469999948,
+      "source_duration_seconds": 0.35152150000067195,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 1001,
+      "source": "raw/001001.png",
+      "raw": "raw/001001.png",
+      "elapsed_seconds": 245.36491620000015,
+      "source_duration_seconds": 0.33998549999523675,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 1002,
+      "source": "raw/001002.png",
+      "raw": "raw/001002.png",
+      "elapsed_seconds": 245.7049016999954,
+      "source_duration_seconds": 0.3634085000012419,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 1003,
+      "source": "raw/001003.png",
+      "raw": "raw/001003.png",
+      "elapsed_seconds": 246.06831019999663,
+      "source_duration_seconds": 0.3205230000021402,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 1004,
+      "source": "raw/001004.png",
+      "raw": "raw/001004.png",
+      "elapsed_seconds": 246.38883319999877,
+      "source_duration_seconds": 0.36611850000190316,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 1005,
+      "source": "raw/001005.png",
+      "raw": "raw/001005.png",
+      "elapsed_seconds": 246.75495170000067,
+      "source_duration_seconds": 0.3188337999963551,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 1006,
+      "source": "raw/001006.png",
+      "raw": "raw/001006.png",
+      "elapsed_seconds": 247.07378549999703,
+      "source_duration_seconds": 0.3385488999992958,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 1007,
+      "source": "raw/001007.png",
+      "raw": "raw/001007.png",
+      "elapsed_seconds": 247.41233439999633,
+      "source_duration_seconds": 0.3102699000010034,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 1008,
+      "source": "raw/001008.png",
+      "raw": "raw/001008.png",
+      "elapsed_seconds": 247.72260429999733,
+      "source_duration_seconds": 0.41967039999872213,
+      "gif_duration_ms": 70
+    },
+    {
+      "index": 1009,
+      "source": "raw/001009.png",
+      "raw": "raw/001009.png",
+      "elapsed_seconds": 248.14227469999605,
+      "source_duration_seconds": 0.3266414000026998,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 1010,
+      "source": "raw/001010.png",
+      "raw": "raw/001010.png",
+      "elapsed_seconds": 248.46891609999875,
+      "source_duration_seconds": 0.3672424000033061,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 1011,
+      "source": "raw/001011.png",
+      "raw": "raw/001011.png",
+      "elapsed_seconds": 248.83615850000206,
+      "source_duration_seconds": 0.3409449999962817,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 1012,
+      "source": "raw/001012.png",
+      "raw": "raw/001012.png",
+      "elapsed_seconds": 249.17710349999834,
+      "source_duration_seconds": 0.3284313999974984,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 1013,
+      "source": "raw/001013.png",
+      "raw": "raw/001013.png",
+      "elapsed_seconds": 249.50553489999584,
+      "source_duration_seconds": 0.3380295000024489,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 1014,
+      "source": "raw/001014.png",
+      "raw": "raw/001014.png",
+      "elapsed_seconds": 249.8435643999983,
+      "source_duration_seconds": 0.3459669000003487,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 1015,
+      "source": "raw/001015.png",
+      "raw": "raw/001015.png",
+      "elapsed_seconds": 250.18953129999863,
+      "source_duration_seconds": 0.31161019999854034,
+      "gif_duration_ms": 50
+    },
+    {
+      "index": 1016,
+      "source": "raw/001016.png",
+      "raw": "raw/001016.png",
+      "elapsed_seconds": 250.50114149999717,
+      "source_duration_seconds": 0.3629577000028803,
+      "gif_duration_ms": 60
+    },
+    {
+      "index": 1017,
+      "source": "raw/001017.png",
+      "raw": "raw/001017.png",
+      "elapsed_seconds": 250.86409920000006,
+      "source_duration_seconds": 0.2977545999965514,
+      "gif_duration_ms": 50
+    }
+  ]
+}

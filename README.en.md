@@ -2,40 +2,36 @@
 
 [简体中文](README.md) | **English**
 
+<p align="center">
+  <img src="images/stm32-hold.gif" alt="按住点灯" width="31%" />
+  <img src="images/stm32-toggle.gif" alt="单击切换" width="31%" />
+  <img src="images/stm32-dual.gif" alt="双按键独立点灯" width="31%" />
+</p>
+
+
+
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 
 Let AI agents create, edit, and verify real Proteus circuit projects through Python.
 
+**Undergraduates, particularly those studying Electrical Engineering(EE), often find themselves struggling with Proteus simulations. Today, we’re introducing Proteus skills! This skill allows AI to carry out Proteus simulations. Don’t let tedious wiring and layout hold back the brilliant ideas in your head!**
+
 Proteus Skills provides workflows for schematic editing, microcontroller simulation, button and switch control, and waveform extraction. Agents use [proteus-automatic-api](https://github.com/kudoumakoto6523-design/Proteus_automatic_package) to deliver editable `.pdsprj` projects, verification scripts, and actual simulation results.
 
-This repository contains the skill instructions and reference examples. The Python library is maintained in a separate repository and must be installed separately. The two repositories do not need to be in adjacent directories.
+This repository contains the skill instructions and reference examples. The Python library is maintained separately; the agent checks and installs it from the official GitHub repository during initial setup. The repositories do not need to be adjacent.
 
+This tool is functional, but there are numerous areas that require refinement. If you are also struggling with simulation and would like to use AI to solve this problem, please contact me at: `kudoumakoto6523@gmail.com`
 ## Requirements
 
 - **Windows**, with Proteus and the device models required by your circuit installed.
-- **Python 3.10+**, with **proteus-automatic-api 0.2.0** installed. The Python import name is `proteus_automatic_api`.
+- **Python 3.10+**, preferably 3.12. The agent checks the interpreter and helps install it if missing. You do not need to obtain library source code or a wheel first.
 - **Codex**: the instructions below cover installing and invoking the skill in Codex.
 
-The workflows have been verified with **Python 3.12 / Proteus 8.16 SP3 (8.16.36097)**. Timed simulation and interactive controls require supported Proteus DLL versions; compatibility with other builds has not been verified. Proteus software, models, official samples, and firmware are not bundled with this skill.
+The workflows have been verified with **Python 3.12 / Proteus 8.16 SP3 (8.16.36097)**. Timed simulation and interactive controls require supported Proteus DLL versions; compatibility with other builds has not been verified. Proteus software, models, official samples, and third-party firmware are not bundled with this skill; this repository provides only original demo firmware.
 
 ## Installation
 
-### 1. Install the Python library
-
-If your environment has the old `proteus-native` package installed, follow the [migration instructions](references/distribution.md#独立安装) to uninstall it before installing the new package. Both distributions share internal modules.
-
-Obtain `proteus_automatic_api-0.2.0-py3-none-any.whl` from a known source and set the PowerShell variable `$ProteusWheel` to its absolute path. Then run:
-
-```powershell
-py -3.12 -m pip install --no-index --no-deps "$ProteusWheel"
-py -3.12 -I -c "import proteus_automatic_api; assert proteus_automatic_api.__version__ == '0.2.0'; print(proteus_automatic_api.__file__)"
-```
-
-If you use another Python version, use the same interpreter for installation and execution. Skip this step if the matching version is already installed.
-
-The library's current remote repository is [Proteus_automatic_package](https://github.com/kudoumakoto6523-design/Proteus_automatic_package); this skill uses the renamed `proteus-automatic-api` package. If the download page still offers the old package, obtain the new wheel specified above first. A public download URL and PyPI publication for the renamed package have not been confirmed, so these instructions use a local wheel.
-
-### 2. Install the skill
+### 1. Install the skill
 
 Send this request in Codex:
 
@@ -44,9 +40,23 @@ Use $skill-installer to install https://github.com/kudoumakoto6523-design/proteu
 The repository root is the skill directory. Install it with the name proteus-skills.
 ```
 
-Alternatively, download this repository and place `SKILL.md`, `agents/`, `references/`, and `LICENSE` together in a folder named `proteus-skills` under Codex's `$CODEX_HOME/skills/`. The default location is `~/.codex/skills/proteus-skills/`. The installed entry point should be `proteus-skills/SKILL.md`.
+Alternatively, download this repository and place `SKILL.md`, `agents/`, `references/`, `scripts/`, and `LICENSE` together in a folder named `proteus-skills` under Codex's `$CODEX_HOME/skills/`. The default location is `~/.codex/skills/proteus-skills/`. The installed entry point should be `proteus-skills/SKILL.md`. Keep `examples/stm32/` as well when running the repository demos.
 
-After installation, invoke `$proteus-skills` in your next message.
+### 2. Ask the agent to prepare the environment and start
+
+After installing the skill, send this request in your next message:
+
+```text
+Use $proteus-skills. I only have Proteus installed. Check Python and the library first;
+if needed, install proteus-automatic-api from the official GitHub repository specified
+by the skill, verify it, and continue with my task.
+Create an STM32 project where pressing a button turns an LED on and releasing it turns it off.
+```
+
+The agent runs the setup script bundled with the skill. If the library is missing, it creates a virtual environment in the task directory, resolves the latest default-branch commit from the [official GitHub repository](https://github.com/kudoumakoto6523-design/Proteus_automatic_package), checks the package name and API, and installs that commit's source ZIP. Git is not required, and installation does not wait for a PyPI release. The agent then verifies imports, records the version and commit, and continues the circuit task in the same run. It does not stop at installation instructions or wait for you to install the library manually.
+
+A working installation is reused. To update, ask the agent to update `proteus-automatic-api` from the official GitHub repository and verify it; a newer commit can be installed even if its version number is unchanged. See the [installation workflow](references/distribution.md#首次安装与更新) for commands, old-package migration and offline installation.
+
 
 ## Before you start
 
@@ -54,36 +64,36 @@ Provide the agent with the project or template, the Proteus executable location,
 
 Use actual paths on your machine. Outputs belong in your working directory. The library's built-in paths do not automatically adapt to every installation; see [SKILL.md](SKILL.md#环境与版本) for path parameters and known limitations.
 
-## Usage examples
+## Prompts for the three scenarios
 
-### Create and verify a circuit
+Use the common requirements below, followed by one scenario prompt. The original firmware C sources, HEX files and build scripts are in [examples/stm32](examples/stm32); place the outputs compiled for your run under the task’s `firmware/` directory. The official STM32 template and device models come from your local Proteus installation.
+
+An independent agent rebuilt and verified the three scenarios using only the public prompts, confirming output sequences `0→1→0→1→0`, `0→1→1→1→0→0`, and `00→10→11→01→00`; see the [independent verification record](examples/stm32/verification.json).
+
+The verified prompts below cover the full build and original recording; published GIFs follow the editing and display rules described at the top of this README.
+
+### Common requirements
 
 ```text
-$proteus-skills
-Use the Rescap template available on this machine to create a project with R1 (10k) and C1 (100n).
-Connect R1.2 to C1.2, ground C1.1, and save the project under proteus-output in the current working directory.
-Reopen the project to check component values and connections, then export an SDF netlist using Proteus.
-Deliver the project, netlist, and a rerunnable Python script.
+Use $proteus-skills and only public proteus_automatic_api APIs to create an empty project from a confirmed STM32 template that has been saved natively. Query and select the MCU, BUTTON, resistor and LED with Library.search/get, reuse existing definitions, and place and wire each item individually. Configure a 3.3 V VCC/VDD rail: bind VCC, VDD and VDDA to it, and VSS and VSSA to GND. Connect NRST, VBAT and VREF+ to the supply, and BOOT0 and VSS to ground. Bind the buttons before saving and reopening, then configure the firmware using the HEX compiled for this run. Start each resistor at 470 ohms and change it to 330 ohms through Session.set_properties. Keep components, wires and text clearly spaced inside the drawing frame; use label_offsets where needed. Passively record the continuous workflow from the blank sheet through actual selection, individual placement, wiring, configuration and verification. A new Session may display each saved file edit; show real API calls and query results in a synchronized log. Do not use Computer Use, private helpers or completed screenshots to fabricate the process. Save, close, reopen, check the project and export a native SDF, then verify the behavior below using actual GPIO logs. Deliver the project, HEX, script, SDF, validation records and GIF without changing the template.
 ```
 
-This example verifies the project file and connections. Electrical simulation of the RC circuit requires additional setup, including an input source.
-
-### Verify button and firmware responses
+### Hold to light
 
 ```text
-$proteus-skills
-Inspect the STM32 project and firmware I provided, and check the connection between SW1 and the target input pin.
-Load the firmware into a copy of the project, start the simulation, press SW1, hold it for 0.1 seconds, then release it.
-Continue the simulation and read PA5 GPIO events to verify whether the output follows the button.
-Record the actual simulation times of the press, release, and output transitions.
+Build an STM32F103R6 hold-to-light example using firmware/hold.hex compiled for this run. Connect normally open BUTTON SW1 between 3.3 V and U1.PA0-WKUP; the firmware enables PA0's internal pull-down. Connect U1.PA5 through R1 to D1's anode and ground D1's cathode. Follow the common requirements to select, place, wire, bind and configure everything from an empty sheet. Run successive stages: initially released, press SW1, release SW1, press again, release again. Continue simulation after each action and record actual simulation times. Verify PA5 levels 0→1→0→1→0 from this run's GPIO logs, with each response in the interval after its input change. Button state or a netlist alone does not prove the LED behavior. Record both press-on/release-off cycles and retain structural and response evidence.
 ```
 
-### Export existing waveforms
+### Click to toggle
 
 ```text
-$proteus-skills
-Inspect the existing graphs and probes in the project I provided, run the corresponding analysis, and export waveform CSV files.
-List the voltage and current traces actually available, report their sampled values at the requested times, and provide the output file paths.
+Build an STM32F103R6 single-button toggle example using firmware/toggle.hex compiled for this run. Connect normally open SW1 between 3.3 V and U1.PA0-WKUP, with PA0's internal pull-down enabled. Connect U1.PA5 through R1 to D1's anode and ground the cathode. Follow the common requirements to build the project from an empty sheet, including changing R1 from 470 to 330 ohms through the native property API. The firmware toggles PA5 only on a button rising edge. Verify six successive stages: initially released, first press, continue holding, first release, second press, second release. Continue simulation in every stage and require PA5 levels 0, 1, 1, 1, 0, 0. In particular, holding or releasing must not cause another toggle. Use actual GPIO events and simulation times from this run; absence of a new event alone does not imply a low level. Record the entire build and all six stages.
+```
+
+### Two buttons, independent LEDs
+
+```text
+Build an STM32F103R6 two-button independent LED example using firmware/dual.hex compiled for this run. Connect normally open SW1 and SW2 from 3.3 V to U1.PA0-WKUP and U1.PA1 respectively; the firmware enables both internal pull-downs. Connect U1.PA5 through R1 to D1's anode and U1.PA6 through R2 to D2's anode, grounding both cathodes. Leave clear space between the two channels. Follow the common requirements to place and wire each item, bind both buttons and change both resistors from 470 to 330 ohms through the native API. Run five stages: both released, press SW1, keep SW1 pressed and press SW2, release SW1, release SW2. Continue simulation after every action. In PA5, PA6 order, require output vectors 00→10→11→01→00 and check that operating one channel does not incorrectly change the other. Record the full build, configuration and all five states, verifying independent control with this run's GPIO logs and actual event times.
 ```
 
 ## Capabilities
@@ -96,7 +106,7 @@ List the voltage and current traces actually available, report their sampled val
 | Buttons and switches | Bind binary controls, press, release, or toggle them, and continue simulation to verify downstream responses |
 | Waveform extraction | Export CSV data from existing graphs and probes, and read voltage, current, and sampled values |
 
-The Python library edits project files. Real Proteus processes generate netlists and run simulations. The main workflows do not depend on MCP, OCR, or screen coordinates.
+All Proteus operations use the public `proteus_automatic_api` API, which drives real Proteus processes for netlists and simulation. Agents must not fill API gaps with Computer Use, OCR, screen coordinates, or other GUI automation. Unsupported operations are reported explicitly. Recording tools only capture passively.
 
 ## Known limitations
 
@@ -113,6 +123,9 @@ The skill instructions and detailed workflow references are currently written in
 
 | File | Purpose |
 | --- | --- |
+| [examples/stm32](examples/stm32) | Original firmware sources, HEX files, and build scripts for the three button and LED scenarios |
+| [images](images) | Shared directory for the README demo GIFs |
+| [scripts/ensure_library.py](scripts/ensure_library.py) | Check, install or update the library and return the Python path for the task |
 | [SKILL.md](SKILL.md) | Agent entry point, task selection, operation order, and verification requirements |
 | [agents/openai.yaml](agents/openai.yaml) | Display name and short description in Codex |
 | [references/api-workflows.md](references/api-workflows.md) | Examples for project editing, netlists, firmware, and measurements |
