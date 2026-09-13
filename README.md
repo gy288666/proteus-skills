@@ -59,10 +59,6 @@ Proteus Skills 提供原理图编辑、单片机仿真、按钮与开关控制�
 帮我完成一个 STM32 按下按键点亮 LED、松开熄灭的工程。
 ```
 
-Agent 会实际运行技能自带的环境准备脚本；缺少库时，在任务目录创建虚拟环境，从[官方 GitHub 仓库](https://github.com/kudoumakoto6523-design/Proteus_automatic_package)获取默认分支最新提交，核对包名和接口，安装对应提交的源码 ZIP。安装不需要 Git，不等待 PyPI 发版。安装成功后验证导入、记录版本和提交，并在同一任务中继续电路操作；不会只给安装命令或等待你手动安装。
-
-已有可用库会复用；需要更新时可说“从官方 GitHub 更新 proteus-automatic-api 并验证”。同版本的新提交也能更新。具体命令、旧包迁移和离线安装见[安装工作流](references/distribution.md#首次安装与更新)。
-
 
 ## 使用前准备
 
